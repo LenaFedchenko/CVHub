@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CVHub</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/css/header.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="header">
+        <nav class="head">
+            <div class="gap-head">
+                <div class="navig">
+                    <a asp-controller="Home" asp-action="Index">Main</a>
+                    <a asp-controller="Liked" asp-action="Index">Liked</a>
+                </div>
+                <div class="buttons">
+                    <button><a asp-controller="Registration" asp-action="Index">Registration</a></button>
+                    <button><a asp-controller="Authorisation" asp-action="Index">Authorisation</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>

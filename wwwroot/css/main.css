@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+}
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.prt-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.main{
+    margin-top: 155px;
+    display: flex;
+    width: 40%;
+    height: 238px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 11px;
+}
+
+.logo{
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+    color: #064E68;
+}
+.main img{
+    width: 108.89px;
+    height: 94px;
+}
+.options{
+    margin-top: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 18px;
+    width: 60%;
+}
+.choosing{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 228px;
+    height: 47px;
+    background-color: #517BD4;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 228px;
+    height: 47px;
+    background-color: #517BD4;
+    color: aliceblue;
+    border-radius: 10px;   
+}
+
+.cards{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 49px;
+}
+.card{
+    width: 562px;
+    height: 186px;
+    border-radius: 10px;
+    background-color: #88ACFA;
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    width: 130px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.about{
+    width: 178px;
+    height: 100%;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.tag1{
+    border-radius: 15px;
+    background-color: #F8F415;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.tag2{
+    border-radius: 15px;
+    background-color: #15F8EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.tag3{
+    border-radius: 15px;
+    background-color: #F815E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.tags{
+    width: 160px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 24px;
+    flex-direction: column;
+    padding-left: -35px;
+}
+.name p{
+    margin: 0px;
+}
+.language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    height: 33px;
+    border: 2px #000 solid;
+    width: 65px;
+    border-radius: 10px;
+}
+.languages{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+}
+.work{
+    font-size: 24px;
+    font-weight: 600;
+}
