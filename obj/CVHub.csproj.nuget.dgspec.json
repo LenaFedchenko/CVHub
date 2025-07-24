@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CVH\\CVHub\\CVHub.csproj": {}
+    "D:\\myProject\\CVHub\\CVHub.csproj": {}
   },
   "projects": {
-    "D:\\CVH\\CVHub\\CVHub.csproj": {
+    "D:\\myProject\\CVHub\\CVHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CVH\\CVHub\\CVHub.csproj",
+        "projectUniqueName": "D:\\myProject\\CVHub\\CVHub.csproj",
         "projectName": "CVHub",
-        "projectPath": "D:\\CVH\\CVHub\\CVHub.csproj",
+        "projectPath": "D:\\myProject\\CVHub\\CVHub.csproj",
         "packagesPath": "C:\\Users\\Lena\\.nuget\\packages\\",
-        "outputPath": "D:\\CVH\\CVHub\\obj\\",
+        "outputPath": "D:\\myProject\\CVHub\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lena\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,22 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

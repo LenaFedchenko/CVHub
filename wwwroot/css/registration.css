@@ -67,11 +67,66 @@ main {
     margin-top: 129px;
     letter-spacing: 2px;
 }
-.forms{
+.forms2{
     width: 453px;
     height: 454px;
     background-color: #93B4FA;
     margin-left: 101px;
     border-radius: 10px;
     margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    flex-direction: column;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.main-btn{
+    width: 144px;
+    height: 39px;
+    text-decoration: transparent;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 24px;
+    border: none;
+}
+.sec-btn{
+    width: 144px;
+    height: 39px;
+    text-decoration: transparent;
+    border-radius: none;
+    background-color: transparent;
+    font-size: 24px;
+    border: none;
+}
+.sec-btn a{
+    text-decoration: none;
+    color: #BFD1D8;
+}
+.main-btn a{
+    color: #064E68;
+    text-decoration: none;
+}
+.inp{
+    width: 306px;
+    height: 37px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 3px;
+}
+
+.btn2{
+    width: 113px;
+    height: 28px;
+    border-radius: 10px;
+    background-color: #EAC1FF;
+    color: #064E68;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
 }
