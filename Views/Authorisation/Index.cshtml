@@ -1,5 +1,46 @@
+@model Authorisation
 @{
     ViewData["Title"] = "authorisation";
 }
+
 <link rel="stylesheet" href="~/css/authorisation.css" asp-append-version="true" />
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left">
+        <div class="cv">
+            <h1>CV</h1>
+        </div>
+        <div class="about">
+            <p>Web platform for posting your CV.<br> Ability to add a link to git, talk about<br> work experience and add<br> publications</p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="hub">
+            <h1>Hub</h1>
+        </div>
+        
+        
+            <form method="post" asp-controller="Registration" asp-action="Check" class="forms2">
+                <div class="btn">
+                    <button class="main-btn"><a asp-controller="Registration" asp-action="Index">Registration</a></button>
+                    <button class="sec-btn"><a asp-controller="Authorisation" asp-action="Index">Authorisation</a></button>
+                </div>
+
+                <input asp-for="Email" class="inp" placeholder="Enter email"/>
+                <span asp-validation-for="Email"></span>
+
+                <input asp-for="Password" class="inp" placeholder="Enter password"/>
+                <span asp-validation-for="Password"></span>
+
+                <input type="submit" class="btn2" value="Log in" />
+            </form>
+    </div>
+</body>
+</html>

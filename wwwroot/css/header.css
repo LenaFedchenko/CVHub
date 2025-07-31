@@ -6,6 +6,8 @@
 
 a{
   cursor: pointer;
+  text-decoration: transparent;
+  color: #1B3A4B;
 }
 button:hover{
   cursor: pointer;

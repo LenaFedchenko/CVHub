@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qdxd7mCU9OE=",
+  "dgSpecHash": "IsjG5zc2rok=",
   "success": true,
-  "projectFilePath": "D:\\myProject\\CVHub\\CVHub.csproj",
+  "projectFilePath": "D:\\CVHub\\CVHub\\CVHub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lena\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Lena\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

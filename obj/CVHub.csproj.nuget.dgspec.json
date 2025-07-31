@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\myProject\\CVHub\\CVHub.csproj": {}
+    "D:\\CVHub\\CVHub\\CVHub.csproj": {}
   },
   "projects": {
-    "D:\\myProject\\CVHub\\CVHub.csproj": {
+    "D:\\CVHub\\CVHub\\CVHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myProject\\CVHub\\CVHub.csproj",
+        "projectUniqueName": "D:\\CVHub\\CVHub\\CVHub.csproj",
         "projectName": "CVHub",
-        "projectPath": "D:\\myProject\\CVHub\\CVHub.csproj",
+        "projectPath": "D:\\CVHub\\CVHub\\CVHub.csproj",
         "packagesPath": "C:\\Users\\Lena\\.nuget\\packages\\",
-        "outputPath": "D:\\myProject\\CVHub\\obj\\",
+        "outputPath": "D:\\CVHub\\CVHub\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lena\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Sketch&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    width: 50%;
+    background-color: #93B4FA;
+    margin-left: 0;
+    margin-top: 80px;
+}
+
+.right {
+    width: 50%;
+    /* background-color: #c80000; */
+}
+.cv{
+    width: 100%;
+    height: 155px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+}
+.cv h1{
+    color: #FFFFFF;
+    font-size: 96px;
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    padding-right: 10px;
+}
+.hub h1{
+    color: #064E68;
+    font-size: 96px;
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    padding-left: 10px;
+}
+.hub{
+    margin-top: 108px;
+    font-size: 128px;
+}
+.about{
+    width: 100%;
+    height: 200px;
+    /* background-color: #c80000; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 32px;
+    margin-top: 129px;
+    letter-spacing: 2px;
+}
+
+.forms2{
+    width: 453px;
+    height: 454px;
+    background-color: #93B4FA;
+    margin-left: 101px;
+    border-radius: 10px;
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    flex-direction: column;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.main-btn{
+    width: 144px;
+    height: 39px;
+    text-decoration: transparent;
+    border-radius: none;
+    background-color: transparent;
+    font-size: 24px;
+    border: none;
+}
+.sec-btn{
+    width: 150px;
+    height: 39px;
+    text-decoration: transparent;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 24px;
+    border: none;
+}
+.sec-btn a{
+    color: #064E68;
+    text-decoration: none;
+}
+.main-btn a{
+    text-decoration: none;
+    color: #BFD1D8;
+}
+.inp{
+    width: 306px;
+    height: 37px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 3px;
+}
+
+.btn2{
+    width: 113px;
+    height: 28px;
+    border-radius: 10px;
+    background-color: #EAC1FF;
+    color: #064E68;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}

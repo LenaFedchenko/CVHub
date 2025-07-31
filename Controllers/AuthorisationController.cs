@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using CVHub.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -22,6 +23,23 @@ namespace CVHub.Controllers
         {
             return View();
         }
+
+        // [HttpPost]
+        // public IActionResult CheckUser(Authorisation data)
+        // {
+        //     if (ModelState.IsValid)
+        //     {
+        //         var logUser = new Authorisation
+        //         {
+        //             Email = data.Email,
+        //             Password = data.Password
+        //         };
+
+        //         return RedirectToAction("Success");
+                
+        //     }
+        //     return View("Index");
+        // }
 
     }
 }
