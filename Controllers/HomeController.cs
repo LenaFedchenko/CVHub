@@ -6,6 +6,7 @@ namespace CVHub.Controllers;
 
 public class HomeController : Controller
 {
+    public static bool IsEnter = false;
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -15,6 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.IsEnter = HttpContext.Session.GetString("IsEnter") == "true";
         return View();
     }
 

@@ -65,7 +65,6 @@ D:\CVHub\CVHub\obj\Debug\net9.0\ref\CVHub.dll
 D:\CVHub\CVHub\obj\Debug\net9.0\compressed\twji0t5zbu-a65k109hbv.gz
 D:\CVHub\CVHub\obj\Debug\net9.0\compressed\lgbkka33cw-a65k109hbv.gz
 D:\CVHub\CVHub\obj\Debug\net9.0\compressed\6zlq8dwkm2-si4se19kdm.gz
-D:\CVHub\CVHub\obj\Debug\net9.0\compressed\0ppo9soltr-fht5py2a7a.gz
 D:\CVH\CVHub\bin\Debug\net9.0\appsettings.Development.json
 D:\CVH\CVHub\bin\Debug\net9.0\appsettings.json
 D:\CVH\CVHub\bin\Debug\net9.0\CVHub.staticwebassets.runtime.json
@@ -622,4 +621,4 @@ D:\CVHub\CVHub\obj\Debug\net9.0\compressed\6qoj71mboi-m9qm4tazc0.gz
 D:\CVHub\CVHub\obj\Debug\net9.0\compressed\vtijvlrtdh-jjsuc0puko.gz
 D:\CVHub\CVHub\obj\Debug\net9.0\compressed\sxbqeu0hav-9vr69e8ynj.gz
 D:\CVHub\CVHub\obj\Debug\net9.0\CVHub.csproj.Up2Date
-D:\CVHub\CVHub\obj\Debug\net9.0\compressed\yjrq6kcu8j-dkn150opxi.gz
+D:\CVHub\CVHub\obj\Debug\net9.0\compressed\yjrq6kcu8j-rwkov5htgj.gz

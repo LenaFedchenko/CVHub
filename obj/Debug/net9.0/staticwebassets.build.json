@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k+XkrewGtYhMvaKm9z0k9Q+0iQ2RGHURpdAU5g/maU0=",
+  "Hash": "A3tgOkdEk0BBhl1l0zmBqGBSdEmLmcJX8Va/OyyXVU0=",
   "Source": "CVHub",
   "BasePath": "_content/CVHub",
   "Mode": "Default",
@@ -57,27 +57,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\CVHub\\CVHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
-    },
-    {
-      "Identity": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\0ppo9soltr-fht5py2a7a.gz",
-      "SourceId": "CVHub",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/CVHub",
-      "RelativePath": "css/liked#[.{fingerprint=fht5py2a7a}]?.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\CVHub\\CVHub\\wwwroot\\css\\liked.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "o22ejey5br",
-      "Integrity": "AE0kjNSv7RBVlorhzzP3FmBIEBbaMFAAfCJUbJz2SRU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\CVHub\\CVHub\\wwwroot\\css\\liked.css"
     },
     {
       "Identity": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\0tlju6fwnc-u9q1upor1n.gz",
@@ -1340,12 +1319,12 @@
       "OriginalItemSpec": "D:\\CVHub\\CVHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-dkn150opxi.gz",
+      "Identity": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-rwkov5htgj.gz",
       "SourceId": "CVHub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/CVHub",
-      "RelativePath": "css/authorisation#[.{fingerprint=dkn150opxi}]?.css.gz",
+      "RelativePath": "css/authorisation#[.{fingerprint=rwkov5htgj}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1354,8 +1333,8 @@
       "RelatedAsset": "D:\\CVHub\\CVHub\\wwwroot\\css\\authorisation.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "p26ifokkjf",
-      "Integrity": "vwH6+PV+3re1LNSsEjkudY9q3gLE/wezlVgo6+DGJ6g=",
+      "Fingerprint": "tox4f2346g",
+      "Integrity": "c5UqVO6X9SXqsP6D8D8LBoFlW3bw7TaTApUoODWw/0U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\CVHub\\CVHub\\wwwroot\\css\\authorisation.css"
@@ -1501,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dkn150opxi",
-      "Integrity": "c+2HgutcRbn7IEjFZXYakibkeqQWl6QCLUfo/7sE/es=",
+      "Fingerprint": "rwkov5htgj",
+      "Integrity": "JX01TIYWSpnLAG/g0561Owdd8QRUBQftnOJ7ARZSx4s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\authorisation.css"
@@ -1527,27 +1506,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\header.css"
-    },
-    {
-      "Identity": "D:\\CVHub\\CVHub\\wwwroot\\css\\liked.css",
-      "SourceId": "CVHub",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\CVHub\\CVHub\\wwwroot\\",
-      "BasePath": "_content/CVHub",
-      "RelativePath": "css/liked#[.{fingerprint}]?.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fht5py2a7a",
-      "Integrity": "g0WqJPsMWtRnXpLgyHTWscPagFTX228Jgkp3NlLzWLs=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\liked.css"
     },
     {
       "Identity": "D:\\CVHub\\CVHub\\wwwroot\\css\\main.css",
@@ -2939,12 +2897,12 @@
   "Endpoints": [
     {
       "Route": "css/authorisation.css",
-      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-dkn150opxi.gz",
+      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-rwkov5htgj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001371742112"
+          "Quality": "0.001364256480"
         }
       ],
       "ResponseHeaders": [
@@ -2954,15 +2912,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "728"
+          "Value": "732"
         },
         {
           "Name": "ETag",
-          "Value": "\"vwH6+PV+3re1LNSsEjkudY9q3gLE/wezlVgo6+DGJ6g=\""
+          "Value": "\"c5UqVO6X9SXqsP6D8D8LBoFlW3bw7TaTApUoODWw/0U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 10:27:24 GMT"
+          "Value": "Thu, 31 Jul 2025 10:28:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2982,13 +2940,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"c+2HgutcRbn7IEjFZXYakibkeqQWl6QCLUfo/7sE/es=\""
+          "Value": "W/\"JX01TIYWSpnLAG/g0561Owdd8QRUBQftnOJ7ARZSx4s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-c+2HgutcRbn7IEjFZXYakibkeqQWl6QCLUfo/7sE/es="
+          "Value": "sha256-JX01TIYWSpnLAG/g0561Owdd8QRUBQftnOJ7ARZSx4s="
         }
       ]
     },
@@ -3011,11 +2969,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"c+2HgutcRbn7IEjFZXYakibkeqQWl6QCLUfo/7sE/es=\""
+          "Value": "\"JX01TIYWSpnLAG/g0561Owdd8QRUBQftnOJ7ARZSx4s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 10:27:24 GMT"
+          "Value": "Thu, 31 Jul 2025 10:28:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3025,13 +2983,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-c+2HgutcRbn7IEjFZXYakibkeqQWl6QCLUfo/7sE/es="
+          "Value": "sha256-JX01TIYWSpnLAG/g0561Owdd8QRUBQftnOJ7ARZSx4s="
         }
       ]
     },
     {
       "Route": "css/authorisation.css.gz",
-      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-dkn150opxi.gz",
+      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-rwkov5htgj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3040,7 +2998,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "728"
+          "Value": "732"
         },
         {
           "Name": "Content-Type",
@@ -3048,11 +3006,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vwH6+PV+3re1LNSsEjkudY9q3gLE/wezlVgo6+DGJ6g=\""
+          "Value": "\"c5UqVO6X9SXqsP6D8D8LBoFlW3bw7TaTApUoODWw/0U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 10:27:24 GMT"
+          "Value": "Thu, 31 Jul 2025 10:28:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3070,18 +3028,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vwH6+PV+3re1LNSsEjkudY9q3gLE/wezlVgo6+DGJ6g="
+          "Value": "sha256-c5UqVO6X9SXqsP6D8D8LBoFlW3bw7TaTApUoODWw/0U="
         }
       ]
     },
     {
-      "Route": "css/authorisation.dkn150opxi.css",
-      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-dkn150opxi.gz",
+      "Route": "css/authorisation.rwkov5htgj.css",
+      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-rwkov5htgj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001371742112"
+          "Quality": "0.001364256480"
         }
       ],
       "ResponseHeaders": [
@@ -3091,15 +3049,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "728"
+          "Value": "732"
         },
         {
           "Name": "ETag",
-          "Value": "\"vwH6+PV+3re1LNSsEjkudY9q3gLE/wezlVgo6+DGJ6g=\""
+          "Value": "\"c5UqVO6X9SXqsP6D8D8LBoFlW3bw7TaTApUoODWw/0U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 10:27:24 GMT"
+          "Value": "Thu, 31 Jul 2025 10:28:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3119,13 +3077,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"c+2HgutcRbn7IEjFZXYakibkeqQWl6QCLUfo/7sE/es=\""
+          "Value": "W/\"JX01TIYWSpnLAG/g0561Owdd8QRUBQftnOJ7ARZSx4s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dkn150opxi"
+          "Value": "rwkov5htgj"
         },
         {
           "Name": "label",
@@ -3133,12 +3091,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-c+2HgutcRbn7IEjFZXYakibkeqQWl6QCLUfo/7sE/es="
+          "Value": "sha256-JX01TIYWSpnLAG/g0561Owdd8QRUBQftnOJ7ARZSx4s="
         }
       ]
     },
     {
-      "Route": "css/authorisation.dkn150opxi.css",
+      "Route": "css/authorisation.rwkov5htgj.css",
       "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\css\\authorisation.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3156,11 +3114,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"c+2HgutcRbn7IEjFZXYakibkeqQWl6QCLUfo/7sE/es=\""
+          "Value": "\"JX01TIYWSpnLAG/g0561Owdd8QRUBQftnOJ7ARZSx4s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 10:27:24 GMT"
+          "Value": "Thu, 31 Jul 2025 10:28:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3170,7 +3128,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dkn150opxi"
+          "Value": "rwkov5htgj"
         },
         {
           "Name": "label",
@@ -3178,13 +3136,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-c+2HgutcRbn7IEjFZXYakibkeqQWl6QCLUfo/7sE/es="
+          "Value": "sha256-JX01TIYWSpnLAG/g0561Owdd8QRUBQftnOJ7ARZSx4s="
         }
       ]
     },
     {
-      "Route": "css/authorisation.dkn150opxi.css.gz",
-      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-dkn150opxi.gz",
+      "Route": "css/authorisation.rwkov5htgj.css.gz",
+      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-rwkov5htgj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3193,7 +3151,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "728"
+          "Value": "732"
         },
         {
           "Name": "Content-Type",
@@ -3201,11 +3159,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vwH6+PV+3re1LNSsEjkudY9q3gLE/wezlVgo6+DGJ6g=\""
+          "Value": "\"c5UqVO6X9SXqsP6D8D8LBoFlW3bw7TaTApUoODWw/0U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 31 Jul 2025 10:27:24 GMT"
+          "Value": "Thu, 31 Jul 2025 10:28:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3223,7 +3181,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dkn150opxi"
+          "Value": "rwkov5htgj"
         },
         {
           "Name": "label",
@@ -3231,7 +3189,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vwH6+PV+3re1LNSsEjkudY9q3gLE/wezlVgo6+DGJ6g="
+          "Value": "sha256-c5UqVO6X9SXqsP6D8D8LBoFlW3bw7TaTApUoODWw/0U="
         }
       ]
     },
@@ -3530,304 +3488,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-dndUQy8HLLYFFgiJN/sx1MbxW/rwgodkdMLPdOLUBvo="
-        }
-      ]
-    },
-    {
-      "Route": "css/liked.css",
-      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\0ppo9soltr-fht5py2a7a.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.019607843137"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "50"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AE0kjNSv7RBVlorhzzP3FmBIEBbaMFAAfCJUbJz2SRU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Jul 2025 16:46:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"g0WqJPsMWtRnXpLgyHTWscPagFTX228Jgkp3NlLzWLs=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-g0WqJPsMWtRnXpLgyHTWscPagFTX228Jgkp3NlLzWLs="
-        }
-      ]
-    },
-    {
-      "Route": "css/liked.css",
-      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\css\\liked.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g0WqJPsMWtRnXpLgyHTWscPagFTX228Jgkp3NlLzWLs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Jul 2025 16:46:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-g0WqJPsMWtRnXpLgyHTWscPagFTX228Jgkp3NlLzWLs="
-        }
-      ]
-    },
-    {
-      "Route": "css/liked.css.gz",
-      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\0ppo9soltr-fht5py2a7a.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "50"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AE0kjNSv7RBVlorhzzP3FmBIEBbaMFAAfCJUbJz2SRU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Jul 2025 16:46:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AE0kjNSv7RBVlorhzzP3FmBIEBbaMFAAfCJUbJz2SRU="
-        }
-      ]
-    },
-    {
-      "Route": "css/liked.fht5py2a7a.css",
-      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\0ppo9soltr-fht5py2a7a.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.019607843137"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "50"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AE0kjNSv7RBVlorhzzP3FmBIEBbaMFAAfCJUbJz2SRU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Jul 2025 16:46:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"g0WqJPsMWtRnXpLgyHTWscPagFTX228Jgkp3NlLzWLs=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fht5py2a7a"
-        },
-        {
-          "Name": "label",
-          "Value": "css/liked.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-g0WqJPsMWtRnXpLgyHTWscPagFTX228Jgkp3NlLzWLs="
-        }
-      ]
-    },
-    {
-      "Route": "css/liked.fht5py2a7a.css",
-      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\css\\liked.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g0WqJPsMWtRnXpLgyHTWscPagFTX228Jgkp3NlLzWLs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Jul 2025 16:46:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fht5py2a7a"
-        },
-        {
-          "Name": "label",
-          "Value": "css/liked.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-g0WqJPsMWtRnXpLgyHTWscPagFTX228Jgkp3NlLzWLs="
-        }
-      ]
-    },
-    {
-      "Route": "css/liked.fht5py2a7a.css.gz",
-      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\0ppo9soltr-fht5py2a7a.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "50"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AE0kjNSv7RBVlorhzzP3FmBIEBbaMFAAfCJUbJz2SRU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Jul 2025 16:46:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fht5py2a7a"
-        },
-        {
-          "Name": "label",
-          "Value": "css/liked.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AE0kjNSv7RBVlorhzzP3FmBIEBbaMFAAfCJUbJz2SRU="
         }
       ]
     },

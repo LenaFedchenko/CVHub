@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CVHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb6c24f0620f7013d8bfdefb4b92389c864d6e11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d04ecaad17c7c5761993796db29915ed1bc45e34")]
 [assembly: System.Reflection.AssemblyProductAttribute("CVHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CVHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

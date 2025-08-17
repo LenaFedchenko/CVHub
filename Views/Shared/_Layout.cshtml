@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var isEnter = Context.Session.GetString("IsEnter") == "true";
+    var userName = Context.Session.GetString("UserName");
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -13,12 +17,22 @@
             <div class="gap-head">
                 <div class="navig">
                     <a asp-controller="Home" asp-action="Index">Main</a>
-                    <a asp-controller="Liked" asp-action="Index">Liked</a>
                 </div>
-                <div class="buttons">
-                    <button><a asp-controller="Registration" asp-action="Index">Registration</a></button>
-                    <button><a asp-controller="Authorisation" asp-action="Index">Authorisation</a></button>
-                </div>
+
+                @if (!isEnter)
+                {
+                    <div class="buttons">
+                        <a asp-controller="Registration" asp-action="Index">Registration</a>
+                        <a asp-controller="Authorisation" asp-action="Index">Authorisation</a>
+                    </div>
+                }
+                @if(isEnter){
+                    <div class="buttons">
+                        <button>account</button>
+                        <a asp-controller="Registration" asp-action="Logout">Logout</a>
+                    </div>
+                    
+                }
             </div>
         </nav>
     </header>
