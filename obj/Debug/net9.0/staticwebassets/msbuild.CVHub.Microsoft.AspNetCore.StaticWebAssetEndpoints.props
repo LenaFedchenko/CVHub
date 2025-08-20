@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/CVHub/css/account.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\account.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"384"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 20 Aug 2025 09:27:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CVHub/css/account.lcncwkkk8g.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\account.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lcncwkkk8g"},{"Name":"integrity","Value":"sha256-y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM="},{"Name":"label","Value":"_content/CVHub/css/account.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"384"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 20 Aug 2025 09:27:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CVHub/css/authorisation.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\authorisation.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

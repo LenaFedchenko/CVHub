@@ -59,6 +59,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Westwind.AspNetCore.LiveReload": {
+              "target": "Package",
+              "version": "[0.5.2, )"
             }
           },
           "imports": [

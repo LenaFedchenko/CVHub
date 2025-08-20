@@ -622,3 +622,5 @@ D:\CVHub\CVHub\obj\Debug\net9.0\compressed\vtijvlrtdh-jjsuc0puko.gz
 D:\CVHub\CVHub\obj\Debug\net9.0\compressed\sxbqeu0hav-9vr69e8ynj.gz
 D:\CVHub\CVHub\obj\Debug\net9.0\CVHub.csproj.Up2Date
 D:\CVHub\CVHub\obj\Debug\net9.0\compressed\yjrq6kcu8j-rwkov5htgj.gz
+D:\CVHub\CVHub\bin\Debug\net9.0\Westwind.AspNetCore.LiveReload.dll
+D:\CVHub\CVHub\obj\Debug\net9.0\compressed\uy2l90bvtm-lcncwkkk8g.gz

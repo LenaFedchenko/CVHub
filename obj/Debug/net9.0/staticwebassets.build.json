@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A3tgOkdEk0BBhl1l0zmBqGBSdEmLmcJX8Va/OyyXVU0=",
+  "Hash": "SmE9lX0rFkQhQvotoaeiz/vrtlGiA+B71+Vg1XeAEHk=",
   "Source": "CVHub",
   "BasePath": "_content/CVHub",
   "Mode": "Default",
@@ -1151,6 +1151,27 @@
       "OriginalItemSpec": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\scopedcss\\bundle\\CVHub.styles.css"
     },
     {
+      "Identity": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\uy2l90bvtm-lcncwkkk8g.gz",
+      "SourceId": "CVHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/CVHub",
+      "RelativePath": "css/account#[.{fingerprint=lcncwkkk8g}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\CVHub\\CVHub\\wwwroot\\css\\account.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "rc4h9sxwp0",
+      "Integrity": "S9lOsbbt0I58D6Hci8RWTtrYSGaVmt35sxxMOGFIWX0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\CVHub\\CVHub\\wwwroot\\css\\account.css"
+    },
+    {
       "Identity": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\vi4spsd6fl-mlv21k5csn.gz",
       "SourceId": "CVHub",
       "SourceType": "Discovered",
@@ -1464,6 +1485,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\CVHub.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\CVHub\\CVHub\\wwwroot\\css\\account.css",
+      "SourceId": "CVHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CVHub\\CVHub\\wwwroot\\",
+      "BasePath": "_content/CVHub",
+      "RelativePath": "css/account#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lcncwkkk8g",
+      "Integrity": "y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\account.css"
     },
     {
       "Identity": "D:\\CVHub\\CVHub\\wwwroot\\css\\authorisation.css",
@@ -2895,6 +2937,304 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/account.css",
+      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\uy2l90bvtm-lcncwkkk8g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004807692308"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "207"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S9lOsbbt0I58D6Hci8RWTtrYSGaVmt35sxxMOGFIWX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Aug 2025 09:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.css",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\css\\account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Aug 2025 09:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.css.gz",
+      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\uy2l90bvtm-lcncwkkk8g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "207"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S9lOsbbt0I58D6Hci8RWTtrYSGaVmt35sxxMOGFIWX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Aug 2025 09:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S9lOsbbt0I58D6Hci8RWTtrYSGaVmt35sxxMOGFIWX0="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.lcncwkkk8g.css",
+      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\uy2l90bvtm-lcncwkkk8g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004807692308"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "207"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S9lOsbbt0I58D6Hci8RWTtrYSGaVmt35sxxMOGFIWX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Aug 2025 09:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lcncwkkk8g"
+        },
+        {
+          "Name": "label",
+          "Value": "css/account.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.lcncwkkk8g.css",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\css\\account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Aug 2025 09:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lcncwkkk8g"
+        },
+        {
+          "Name": "label",
+          "Value": "css/account.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y87L0qjppce1NInEgbP2rWcSUVyJgauBjpbWo4eNIbM="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.lcncwkkk8g.css.gz",
+      "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\uy2l90bvtm-lcncwkkk8g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "207"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S9lOsbbt0I58D6Hci8RWTtrYSGaVmt35sxxMOGFIWX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Aug 2025 09:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lcncwkkk8g"
+        },
+        {
+          "Name": "label",
+          "Value": "css/account.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S9lOsbbt0I58D6Hci8RWTtrYSGaVmt35sxxMOGFIWX0="
+        }
+      ]
+    },
     {
       "Route": "css/authorisation.css",
       "AssetFile": "D:\\CVHub\\CVHub\\obj\\Debug\\net9.0\\compressed\\yjrq6kcu8j-rwkov5htgj.gz",

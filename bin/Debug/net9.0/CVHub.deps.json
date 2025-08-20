@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.7",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.8"
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
+          "Westwind.AspNetCore.LiveReload": "0.5.2"
         },
         "runtime": {
           "CVHub.dll": {}
@@ -1191,6 +1192,14 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "Westwind.AspNetCore.LiveReload/0.5.2": {
+        "runtime": {
+          "lib/net9.0/Westwind.AspNetCore.LiveReload.dll": {
+            "assemblyVersion": "0.5.2.0",
+            "fileVersion": "0.5.2.0"
+          }
+        }
       }
     }
   },
@@ -1801,6 +1810,13 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Westwind.AspNetCore.LiveReload/0.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G2asxO3JCzfrXai6sm5VZNtbsReU908/nj6tv/+xQzBhY2LYHS+OdSG7dbaW0j91cd2Dd6OpnUGCXpSygzwq5w==",
+      "path": "westwind.aspnetcore.livereload/0.5.2",
+      "hashPath": "westwind.aspnetcore.livereload.0.5.2.nupkg.sha512"
     }
   }
 }

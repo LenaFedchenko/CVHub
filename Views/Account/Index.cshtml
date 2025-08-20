@@ -1,0 +1,78 @@
+@model CVHub.Models.Account
+@{
+    ViewData["Title"] = "Account";
+}
+<link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+</head>
+<body>
+    <form asp-controller="Account" asp-action="Create" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="All" class="text-danger">
+
+        <input asp-for="PhotoFile" type="file" />
+        <span asp-validation-for="PhotoFile"></span>
+
+        <input asp-for="Name" placeholder="Enter name"/>
+        <span asp-validation-for="Name"></span>
+
+        <input asp-for="Surname" placeholder="Enter surname"/>
+        <span asp-validation-for="Surname"></span>
+
+        <input asp-for="Email" placeholder="Enter email"/>
+        <span asp-validation-for="Email"></span>
+
+        <input asp-for="Linkedin" placeholder="Link to Linkedin"/>
+        <span asp-validation-for="Linkedin"></span>
+
+        <input asp-for="Github" placeholder="Link to GitHub"/>
+        <span asp-validation-for="Github"></span>
+
+        <select asp-for="Age" class="form-control">
+            <option value="" disabled selected>Age</option>
+            <option value="16-18">16-18</option>
+            <option value="18-30">18-30</option>
+            <option value="30-50">30-50</option>
+            <option value="50+">50+</option>
+        </select>
+
+        <select asp-for="Role" class="form-control">
+            <option value="" disabled selected>Role</option>
+            <option value="dev">Frontend Developer</option>
+            <option value="pm">Backend Developer</option>
+            <option value="kl">Fullstack Developer</option>
+            <option value="sd">Mobile Developer</option>
+            <option value="gf">Game Developer</option>
+            <option value="wr">Automation QA</option>
+        </select>
+
+        <select asp-for="Seniority" class="form-control">
+            <option value="" disabled selected>Seniority</option>
+            <option value="jr">Junior</option>
+            <option value="mid">Middle</option>
+            <option value="sr">Senior</option>
+        </select>
+
+        <input asp-for="PlaceEarly" placeholder="Previous place of work"/>
+        <span asp-validation-for="PlaceEarly"></span>
+
+        <input asp-for="Expirience" placeholder="Tell us about your work experience"/>
+        <span asp-validation-for="Expirience"></span>
+
+
+        <label><input type="checkbox" name="SelectedSkills" value="C#" /> C#</label>
+        <label><input type="checkbox" name="SelectedSkills" value="ASP.NET" /> ASP.NET</label>
+        <label><input type="checkbox" name="SelectedSkills" value="SQL" /> SQL</label>
+        <label><input type="checkbox" name="SelectedSkills" value="JavaScript" /> JavaScript</label>
+
+
+        </div>
+        <button type="submit" class="btn2">Create</button>
+    </form>
+
+</body>
+</html>

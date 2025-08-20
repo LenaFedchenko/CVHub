@@ -12,6 +12,7 @@ public class Registration
     public string Surname { get; set; }
 
     [Required(ErrorMessage = "Enter your Email")]
+    [EmailAddress(ErrorMessage = "Enter a valid Email address")]
     public string Email { get; set; }
 
     [Required(ErrorMessage = "Enter Password")]

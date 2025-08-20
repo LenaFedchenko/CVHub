@@ -13,6 +13,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.5.2" />
   </ItemGroup>
 
 </Project>

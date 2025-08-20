@@ -1791,6 +1791,22 @@
             "rid": "win"
           }
         }
+      },
+      "Westwind.AspNetCore.LiveReload/0.5.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Westwind.AspNetCore.LiveReload.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Westwind.AspNetCore.LiveReload.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -5034,13 +5050,33 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Westwind.AspNetCore.LiveReload/0.5.2": {
+      "sha512": "G2asxO3JCzfrXai6sm5VZNtbsReU908/nj6tv/+xQzBhY2LYHS+OdSG7dbaW0j91cd2Dd6OpnUGCXpSygzwq5w==",
+      "type": "package",
+      "path": "westwind.aspnetcore.livereload/0.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.MD",
+        "icon.png",
+        "lib/net6.0/Westwind.AspNetCore.LiveReload.dll",
+        "lib/net6.0/Westwind.AspNetCore.LiveReload.xml",
+        "lib/net8.0/Westwind.AspNetCore.LiveReload.dll",
+        "lib/net8.0/Westwind.AspNetCore.LiveReload.xml",
+        "lib/net9.0/Westwind.AspNetCore.LiveReload.dll",
+        "lib/net9.0/Westwind.AspNetCore.LiveReload.xml",
+        "westwind.aspnetcore.livereload.0.5.2.nupkg.sha512",
+        "westwind.aspnetcore.livereload.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.7",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.8"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.8",
+      "Westwind.AspNetCore.LiveReload >= 0.5.2"
     ]
   },
   "packageFolders": {
@@ -5101,6 +5137,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.8, )"
+          },
+          "Westwind.AspNetCore.LiveReload": {
+            "target": "Package",
+            "version": "[0.5.2, )"
           }
         },
         "imports": [

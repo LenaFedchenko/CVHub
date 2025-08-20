@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CVHub.a65k109hbv.bundle.scp.css"
     },
     {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\css\\account.css",
+      "PackagePath": "staticwebassets\\css\\account.css"
+    },
+    {
       "Id": "D:\\CVHub\\CVHub\\wwwroot\\css\\authorisation.css",
       "PackagePath": "staticwebassets\\css\\authorisation.css"
     },
