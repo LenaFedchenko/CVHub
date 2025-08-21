@@ -1,6 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 namespace CVHub.Models;
+using Microsoft.EntityFrameworkCore;
 
+[Index(nameof(Email), IsUnique=true)]
 public class Registration
 {
     public int Id { get; set; }
@@ -13,9 +15,10 @@ public class Registration
 
     [Required(ErrorMessage = "Enter your Email")]
     [EmailAddress(ErrorMessage = "Enter a valid Email address")]
+
     public string Email { get; set; }
 
     [Required(ErrorMessage = "Enter Password")]
-    [StringLength(8, ErrorMessage ="Your password must have 8 symbols")]
+    [MinLength(8, ErrorMessage = "Your password must be at least 8 characters")]
     public string Password { get; set; }
 }

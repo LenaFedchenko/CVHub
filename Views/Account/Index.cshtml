@@ -3,6 +3,7 @@
     ViewData["Title"] = "Account";
 }
 <link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,68 +12,122 @@
     <title>Account</title>
 </head>
 <body>
-    <form asp-controller="Account" asp-action="Create" method="post" enctype="multipart/form-data">
-        <div asp-validation-summary="All" class="text-danger">
+    <form asp-controller="Account" asp-action=@(string.IsNullOrEmpty(Model?.Email) ? "Create" : "Update") method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="All" class="text-danger"></div>
 
-        <input asp-for="PhotoFile" type="file" />
-        <span asp-validation-for="PhotoFile"></span>
+        <div class="prt1">
+            <div class="photo">
+                <img id="preview" src="@(string.IsNullOrEmpty(Model?.Photo) ? Url.Content("~/images/ava.png") : Model.Photo)" alt="avatar" class="ava">
+                <input asp-for="PhotoFile" type="file" id="ph" accept="image/*" />
+                <span asp-validation-for="PhotoFile"></span>
+            </div>
 
-        <input asp-for="Name" placeholder="Enter name"/>
-        <span asp-validation-for="Name"></span>
+            <div class="prt2">
+                <input asp-for="Name" placeholder="Enter name"/>
+                <span asp-validation-for="Name"></span>
 
-        <input asp-for="Surname" placeholder="Enter surname"/>
-        <span asp-validation-for="Surname"></span>
+                <input asp-for="Surname" placeholder="Enter surname"/>
+                <span asp-validation-for="Surname"></span>
 
-        <input asp-for="Email" placeholder="Enter email"/>
-        <span asp-validation-for="Email"></span>
+                <input asp-for="Email" placeholder="Enter email"/>
+                <span asp-validation-for="Email"></span>
 
-        <input asp-for="Linkedin" placeholder="Link to Linkedin"/>
-        <span asp-validation-for="Linkedin"></span>
+                <input asp-for="Linkedin" placeholder="Link to Linkedin"/>
+                <span asp-validation-for="Linkedin"></span>
 
-        <input asp-for="Github" placeholder="Link to GitHub"/>
-        <span asp-validation-for="Github"></span>
-
-        <select asp-for="Age" class="form-control">
-            <option value="" disabled selected>Age</option>
-            <option value="16-18">16-18</option>
-            <option value="18-30">18-30</option>
-            <option value="30-50">30-50</option>
-            <option value="50+">50+</option>
-        </select>
-
-        <select asp-for="Role" class="form-control">
-            <option value="" disabled selected>Role</option>
-            <option value="dev">Frontend Developer</option>
-            <option value="pm">Backend Developer</option>
-            <option value="kl">Fullstack Developer</option>
-            <option value="sd">Mobile Developer</option>
-            <option value="gf">Game Developer</option>
-            <option value="wr">Automation QA</option>
-        </select>
-
-        <select asp-for="Seniority" class="form-control">
-            <option value="" disabled selected>Seniority</option>
-            <option value="jr">Junior</option>
-            <option value="mid">Middle</option>
-            <option value="sr">Senior</option>
-        </select>
-
-        <input asp-for="PlaceEarly" placeholder="Previous place of work"/>
-        <span asp-validation-for="PlaceEarly"></span>
-
-        <input asp-for="Expirience" placeholder="Tell us about your work experience"/>
-        <span asp-validation-for="Expirience"></span>
-
-
-        <label><input type="checkbox" name="SelectedSkills" value="C#" /> C#</label>
-        <label><input type="checkbox" name="SelectedSkills" value="ASP.NET" /> ASP.NET</label>
-        <label><input type="checkbox" name="SelectedSkills" value="SQL" /> SQL</label>
-        <label><input type="checkbox" name="SelectedSkills" value="JavaScript" /> JavaScript</label>
-
-
+                <input asp-for="Github" placeholder="Link to GitHub"/>
+                <span asp-validation-for="Github"></span>
+            </div>
         </div>
-        <button type="submit" class="btn2">Create</button>
+
+        <div class="drops">
+            <select asp-for="Age" class="form-control">
+                <option value="" disabled selected>Age</option>
+                <option value="16-18">16-18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+
+            <select asp-for="Role" class="form-control">
+                <option value="" disabled selected>Role</option>
+                <option value="dev">Frontend Developer</option>
+                <option value="pm">Backend Developer</option>
+                <option value="kl">Fullstack Developer</option>
+                <option value="sd">Mobile Developer</option>
+                <option value="gf">Game Developer</option>
+                <option value="wr">Automation QA</option>
+            </select>
+
+            <select asp-for="Seniority" class="form-control">
+                <option value="" disabled selected>Seniority</option>
+                <option value="jr">Junior</option>
+                <option value="mid">Middle</option>
+                <option value="sr">Senior</option>
+            </select>
+        </div>
+
+        <div class="info">
+            <textarea asp-for="PlaceEarly" placeholder="Previous place of work"></textarea>
+            <span asp-validation-for="PlaceEarly"></span>
+
+            <textarea asp-for="Expirience" placeholder="Tell us about your work experience"></textarea>
+            <span asp-validation-for="Expirience"></span>
+        </div>
+<div class="last">
+    <p>Languages of programming which you know</p>
+    <div class="lan">
+        <div class="col">
+            <label>
+                <input type="checkbox" name="SelectedSkills" value="C#"
+                    @(Model.SelectedSkills.Contains("C#") ? "checked" : "") /> C#
+            </label>
+        </div>
+        <div class="col">
+            <label>
+                <input type="checkbox" name="SelectedSkills" value="Python"
+                    @(Model.SelectedSkills.Contains("Python") ? "checked" : "") /> Python
+            </label>
+        </div>
+        <div class="col">
+            <label>
+                <input type="checkbox" name="SelectedSkills" value="SQL"
+                    @(Model.SelectedSkills.Contains("SQL") ? "checked" : "") /> SQL
+            </label>
+        </div>
+        <div class="col">
+            <label>
+                <input type="checkbox" name="SelectedSkills" value="JavaScript"
+                    @(Model.SelectedSkills.Contains("JavaScript") ? "checked" : "") /> JavaScript
+            </label>
+        </div>
+        <div class="col">
+            <label>
+                <input type="checkbox" name="SelectedSkills" value="C++"
+                    @(Model.SelectedSkills.Contains("C++") ? "checked" : "") /> C++
+            </label>
+        </div>
+        <div class="col">
+            <label>
+                <input type="checkbox" name="SelectedSkills" value="Kotlin"
+                    @(Model.SelectedSkills.Contains("Kotlin") ? "checked" : "") /> Kotlin
+            </label>
+        </div>
+        <div class="col">
+            <label>
+                <input type="checkbox" name="SelectedSkills" value="Swift"
+                    @(Model.SelectedSkills.Contains("Swift") ? "checked" : "") /> Swift
+            </label>
+        </div>
+    </div>
+</div>
+
+        <div class="btn">
+            <button type="submit" class="btn2">@(string.IsNullOrEmpty(Model?.Email) ? "Create" : "Update")</button>
+        </div>
     </form>
 
+
+    <script src="~/js/account.js"></script>
 </body>
 </html>

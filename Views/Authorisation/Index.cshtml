@@ -27,7 +27,7 @@
         </div>
         
         
-            <form method="post" asp-controller="Registration" asp-action="Check" class="forms2">
+            <form method="post" asp-controller="Authorisation" asp-action="CheckUser" class="forms2">
                 <div class="btn">
                     <button class="main-btn"><a asp-controller="Registration" asp-action="Index">Registration</a></button>
                     <button class="sec-btn"><a asp-controller="Authorisation" asp-action="Index">Authorisation</a></button>
@@ -36,10 +36,10 @@
                 <input asp-for="Email" class="inp" placeholder="Enter email"/>
                 <span asp-validation-for="Email"></span>
 
-                <input asp-for="Password" class="inp" placeholder="Enter password"/>
+                <input asp-for="Password" class="inp" placeholder="Enter password" type="password"/>
                 <span asp-validation-for="Password"></span>
 
-                <input type="submit" class="btn2" value="Log in" />
+                <button><a asp-controller="Home" asp-action="Index"><input type="submit" class="btn2" value="Log in"/></a></button>
             </form>
     </div>
 </body>

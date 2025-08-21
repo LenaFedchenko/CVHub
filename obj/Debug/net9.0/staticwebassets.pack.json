@@ -29,12 +29,60 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\ava.png",
+      "PackagePath": "staticwebassets\\images\\ava.png"
+    },
+    {
       "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\avatar.png",
       "PackagePath": "staticwebassets\\images\\avatar.png"
     },
     {
       "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\comp.png",
       "PackagePath": "staticwebassets\\images\\comp.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\19f79161-bc50-413f-ab31-1629320991b6.png",
+      "PackagePath": "staticwebassets\\images\\photo\\19f79161-bc50-413f-ab31-1629320991b6.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\1e882fef-d6db-4b07-98c2-4a6231634f2e.png",
+      "PackagePath": "staticwebassets\\images\\photo\\1e882fef-d6db-4b07-98c2-4a6231634f2e.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\362365f7-db69-441f-8ea7-f5462ab22e93.png",
+      "PackagePath": "staticwebassets\\images\\photo\\362365f7-db69-441f-8ea7-f5462ab22e93.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\521cb701-451d-4e1a-94b3-53eb37896556.png",
+      "PackagePath": "staticwebassets\\images\\photo\\521cb701-451d-4e1a-94b3-53eb37896556.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\7278ef0f-207d-4ccc-ba95-b800c409b2eb.png",
+      "PackagePath": "staticwebassets\\images\\photo\\7278ef0f-207d-4ccc-ba95-b800c409b2eb.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\a517d46f-6c5b-4800-9818-c6e9c759a040.png",
+      "PackagePath": "staticwebassets\\images\\photo\\a517d46f-6c5b-4800-9818-c6e9c759a040.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\ac391078-fe8d-40d4-8f80-572516a65870.png",
+      "PackagePath": "staticwebassets\\images\\photo\\ac391078-fe8d-40d4-8f80-572516a65870.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\b5100664-4aab-4fa8-8cd5-bacb1660b458.png",
+      "PackagePath": "staticwebassets\\images\\photo\\b5100664-4aab-4fa8-8cd5-bacb1660b458.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\b7700033-3e55-43ee-ba39-02f36ca45063.png",
+      "PackagePath": "staticwebassets\\images\\photo\\b7700033-3e55-43ee-ba39-02f36ca45063.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\d0bd82d4-74a3-4d56-ae3b-1514630112ff.png",
+      "PackagePath": "staticwebassets\\images\\photo\\d0bd82d4-74a3-4d56-ae3b-1514630112ff.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\js\\account.js",
+      "PackagePath": "staticwebassets\\js\\account.js"
     },
     {
       "Id": "D:\\CVHub\\CVHub\\wwwroot\\js\\site.js",
