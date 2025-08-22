@@ -6,10 +6,10 @@ namespace CVHub.Models
     public class Account
     {
         public int Id { get; set; }
-
+        public int RegistrationId { get; set; }
+        public Registration? Registration { get; set; }
         public string? Photo { get; set; }
 
-        // Для загрузки файла (не хранится в БД)
         [NotMapped]
         public IFormFile? PhotoFile { get; set; }
 
@@ -25,19 +25,22 @@ namespace CVHub.Models
 
         public string? Linkedin { get; set; }
         public string? Github { get; set; }
-
         public string? Age { get; set; }
         public string? Role { get; set; }
         public string? Seniority { get; set; }
-
         public string? PlaceEarly { get; set; }
-        public string? Expirience { get; set; }
-
-        // 🔹 В БД хранится строка со скиллами через запятую ("C#,SQL,Python")
+        public string? Experience { get; set; }
         public string? Skills { get; set; }
 
-        // 🔹 Не маппится в БД, используется только в форме
         [NotMapped]
         public string[] SelectedSkills { get; set; } = Array.Empty<string>();
+
+        
+        public List<string> GetSkillsList()
+        {
+            return string.IsNullOrEmpty(Skills) 
+                ? new List<string>() 
+                : Skills.Split(',').ToList();
+        }
     }
 }

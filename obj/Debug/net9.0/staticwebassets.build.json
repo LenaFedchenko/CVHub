@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "867nkYyDA/Ca02fz5rTviW2t0M1ORLXZqGmbXBhlq1I=",
+  "Hash": "oTP2IHnosG8hnCejNPnP//ap0WWR8j/cGd95xL2wzXI=",
   "Source": "CVHub",
   "BasePath": "_content/CVHub",
   "Mode": "Default",
@@ -1697,6 +1697,27 @@
       "OriginalItemSpec": "wwwroot\\images\\comp.png"
     },
     {
+      "Identity": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\173f1548-d8a1-4e30-b6a2-bab7cd5af48f.png",
+      "SourceId": "CVHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CVHub\\CVHub\\wwwroot\\",
+      "BasePath": "_content/CVHub",
+      "RelativePath": "images/photo/173f1548-d8a1-4e30-b6a2-bab7cd5af48f#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "73cgft0mri",
+      "Integrity": "MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\photo\\173f1548-d8a1-4e30-b6a2-bab7cd5af48f.png"
+    },
+    {
       "Identity": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\19f79161-bc50-413f-ab31-1629320991b6.png",
       "SourceId": "CVHub",
       "SourceType": "Discovered",
@@ -1779,6 +1800,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\photo\\521cb701-451d-4e1a-94b3-53eb37896556.png"
+    },
+    {
+      "Identity": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\529c70cf-1382-4d0c-ae77-67f62c6e3fb5.png",
+      "SourceId": "CVHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CVHub\\CVHub\\wwwroot\\",
+      "BasePath": "_content/CVHub",
+      "RelativePath": "images/photo/529c70cf-1382-4d0c-ae77-67f62c6e3fb5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "73cgft0mri",
+      "Integrity": "MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\photo\\529c70cf-1382-4d0c-ae77-67f62c6e3fb5.png"
+    },
+    {
+      "Identity": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\657baf45-84c9-4b7c-9ebd-229b064f05d2.png",
+      "SourceId": "CVHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CVHub\\CVHub\\wwwroot\\",
+      "BasePath": "_content/CVHub",
+      "RelativePath": "images/photo/657baf45-84c9-4b7c-9ebd-229b064f05d2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "13qplz9do1",
+      "Integrity": "sz4Ssh2aaWDZ5ATjnsVLEfSa7jo5bDDwMaD5qOCbP9s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\photo\\657baf45-84c9-4b7c-9ebd-229b064f05d2.png"
     },
     {
       "Identity": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\7278ef0f-207d-4ccc-ba95-b800c409b2eb.png",
@@ -1905,6 +1968,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\photo\\d0bd82d4-74a3-4d56-ae3b-1514630112ff.png"
+    },
+    {
+      "Identity": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\eed001e1-8387-4cd2-ae94-2234dcdab449.png",
+      "SourceId": "CVHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CVHub\\CVHub\\wwwroot\\",
+      "BasePath": "_content/CVHub",
+      "RelativePath": "images/photo/eed001e1-8387-4cd2-ae94-2234dcdab449#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "73cgft0mri",
+      "Integrity": "MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\photo\\eed001e1-8387-4cd2-ae94-2234dcdab449.png"
     },
     {
       "Identity": "D:\\CVHub\\CVHub\\wwwroot\\js\\account.js",
@@ -5841,6 +5925,88 @@
       ]
     },
     {
+      "Route": "images/photo/173f1548-d8a1-4e30-b6a2-bab7cd5af48f.73cgft0mri.png",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\173f1548-d8a1-4e30-b6a2-bab7cd5af48f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Aug 2025 12:49:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "73cgft0mri"
+        },
+        {
+          "Name": "label",
+          "Value": "images/photo/173f1548-d8a1-4e30-b6a2-bab7cd5af48f.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8="
+        }
+      ]
+    },
+    {
+      "Route": "images/photo/173f1548-d8a1-4e30-b6a2-bab7cd5af48f.png",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\173f1548-d8a1-4e30-b6a2-bab7cd5af48f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Aug 2025 12:49:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8="
+        }
+      ]
+    },
+    {
       "Route": "images/photo/19f79161-bc50-413f-ab31-1629320991b6.png",
       "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\19f79161-bc50-413f-ab31-1629320991b6.png",
       "Selectors": [],
@@ -6155,6 +6321,170 @@
         {
           "Name": "Last-Modified",
           "Value": "Wed, 20 Aug 2025 11:53:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sz4Ssh2aaWDZ5ATjnsVLEfSa7jo5bDDwMaD5qOCbP9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/photo/529c70cf-1382-4d0c-ae77-67f62c6e3fb5.73cgft0mri.png",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\529c70cf-1382-4d0c-ae77-67f62c6e3fb5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Aug 2025 12:56:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "73cgft0mri"
+        },
+        {
+          "Name": "label",
+          "Value": "images/photo/529c70cf-1382-4d0c-ae77-67f62c6e3fb5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8="
+        }
+      ]
+    },
+    {
+      "Route": "images/photo/529c70cf-1382-4d0c-ae77-67f62c6e3fb5.png",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\529c70cf-1382-4d0c-ae77-67f62c6e3fb5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Aug 2025 12:56:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8="
+        }
+      ]
+    },
+    {
+      "Route": "images/photo/657baf45-84c9-4b7c-9ebd-229b064f05d2.13qplz9do1.png",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\657baf45-84c9-4b7c-9ebd-229b064f05d2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sz4Ssh2aaWDZ5ATjnsVLEfSa7jo5bDDwMaD5qOCbP9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Aug 2025 12:57:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "13qplz9do1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/photo/657baf45-84c9-4b7c-9ebd-229b064f05d2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sz4Ssh2aaWDZ5ATjnsVLEfSa7jo5bDDwMaD5qOCbP9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/photo/657baf45-84c9-4b7c-9ebd-229b064f05d2.png",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\657baf45-84c9-4b7c-9ebd-229b064f05d2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sz4Ssh2aaWDZ5ATjnsVLEfSa7jo5bDDwMaD5qOCbP9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Aug 2025 12:57:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6657,6 +6987,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-sz4Ssh2aaWDZ5ATjnsVLEfSa7jo5bDDwMaD5qOCbP9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/photo/eed001e1-8387-4cd2-ae94-2234dcdab449.73cgft0mri.png",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\eed001e1-8387-4cd2-ae94-2234dcdab449.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Aug 2025 12:41:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "73cgft0mri"
+        },
+        {
+          "Name": "label",
+          "Value": "images/photo/eed001e1-8387-4cd2-ae94-2234dcdab449.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8="
+        }
+      ]
+    },
+    {
+      "Route": "images/photo/eed001e1-8387-4cd2-ae94-2234dcdab449.png",
+      "AssetFile": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\eed001e1-8387-4cd2-ae94-2234dcdab449.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "326636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Aug 2025 12:41:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MyTtUnZER8x/++Rqer4ishaAeRFtPjA4jw9l8X0uYK8="
         }
       ]
     },

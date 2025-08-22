@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\images\\comp.png"
     },
     {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\173f1548-d8a1-4e30-b6a2-bab7cd5af48f.png",
+      "PackagePath": "staticwebassets\\images\\photo\\173f1548-d8a1-4e30-b6a2-bab7cd5af48f.png"
+    },
+    {
       "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\19f79161-bc50-413f-ab31-1629320991b6.png",
       "PackagePath": "staticwebassets\\images\\photo\\19f79161-bc50-413f-ab31-1629320991b6.png"
     },
@@ -55,6 +59,14 @@
     {
       "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\521cb701-451d-4e1a-94b3-53eb37896556.png",
       "PackagePath": "staticwebassets\\images\\photo\\521cb701-451d-4e1a-94b3-53eb37896556.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\529c70cf-1382-4d0c-ae77-67f62c6e3fb5.png",
+      "PackagePath": "staticwebassets\\images\\photo\\529c70cf-1382-4d0c-ae77-67f62c6e3fb5.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\657baf45-84c9-4b7c-9ebd-229b064f05d2.png",
+      "PackagePath": "staticwebassets\\images\\photo\\657baf45-84c9-4b7c-9ebd-229b064f05d2.png"
     },
     {
       "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\7278ef0f-207d-4ccc-ba95-b800c409b2eb.png",
@@ -79,6 +91,10 @@
     {
       "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\d0bd82d4-74a3-4d56-ae3b-1514630112ff.png",
       "PackagePath": "staticwebassets\\images\\photo\\d0bd82d4-74a3-4d56-ae3b-1514630112ff.png"
+    },
+    {
+      "Id": "D:\\CVHub\\CVHub\\wwwroot\\images\\photo\\eed001e1-8387-4cd2-ae94-2234dcdab449.png",
+      "PackagePath": "staticwebassets\\images\\photo\\eed001e1-8387-4cd2-ae94-2234dcdab449.png"
     },
     {
       "Id": "D:\\CVHub\\CVHub\\wwwroot\\js\\account.js",

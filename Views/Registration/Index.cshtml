@@ -29,7 +29,7 @@
                 <form method="post" asp-controller="Registration" asp-action="Check" class="forms2">
                     <div class="btn">
                         <button class="main-btn"><a asp-controller="Registration" asp-action="Index">Registration</a></button>
-                        <button class="sec-btn"><a asp-controller="Authorisation" asp-action="Index">Authorisation</a></button>
+                        <button class="sec-btn"><a asp-controller="Registration" asp-action="Login">Authorisation</a></button>
                     </div>
 
                     <input asp-for="Name" class="inp" placeholder="Enter name"/>
@@ -44,7 +44,7 @@
                     <input asp-for="Password" class="inp" placeholder="Enter password" type="password"/>
                     <span asp-validation-for="Password"></span>
 
-                    <button><a asp-controller="Home" asp-action="Index"><input type="submit" class="btn2" value="Create"/></a></button>
+                    <button type="submit" class="btn2">Create</button>
                     
                 </form>
         </div>

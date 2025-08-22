@@ -12,7 +12,7 @@
     <title>Account</title>
 </head>
 <body>
-    <form asp-controller="Account" asp-action=@(string.IsNullOrEmpty(Model?.Email) ? "Create" : "Update") method="post" enctype="multipart/form-data">
+    <form asp-controller="Account" asp-action="@(string.IsNullOrEmpty(Model?.Email) ? "Create" : "Update")" method="post" enctype="multipart/form-data">
         <div asp-validation-summary="All" class="text-danger"></div>
 
         <div class="prt1">
@@ -71,56 +71,57 @@
             <textarea asp-for="PlaceEarly" placeholder="Previous place of work"></textarea>
             <span asp-validation-for="PlaceEarly"></span>
 
-            <textarea asp-for="Expirience" placeholder="Tell us about your work experience"></textarea>
-            <span asp-validation-for="Expirience"></span>
+            <textarea asp-for="Experience" placeholder="Tell us about your work experience"></textarea>
+            <span asp-validation-for="Experience"></span>
         </div>
-<div class="last">
-    <p>Languages of programming which you know</p>
-    <div class="lan">
-        <div class="col">
-            <label>
-                <input type="checkbox" name="SelectedSkills" value="C#"
-                    @(Model.SelectedSkills.Contains("C#") ? "checked" : "") /> C#
-            </label>
+
+        <div class="last">
+            <p>Languages of programming which you know</p>
+            <div class="lan">
+                <div class="col">
+                    <label>
+                        <input type="checkbox" name="SelectedSkills" value="C#"
+                            @(Model.SelectedSkills.Contains("C#") ? "checked" : "") /> C#
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <input type="checkbox" name="SelectedSkills" value="Python"
+                            @(Model.SelectedSkills.Contains("Python") ? "checked" : "") /> Python
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <input type="checkbox" name="SelectedSkills" value="SQL"
+                            @(Model.SelectedSkills.Contains("SQL") ? "checked" : "") /> SQL
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <input type="checkbox" name="SelectedSkills" value="JavaScript"
+                            @(Model.SelectedSkills.Contains("JavaScript") ? "checked" : "") /> JavaScript
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <input type="checkbox" name="SelectedSkills" value="C++"
+                            @(Model.SelectedSkills.Contains("C++") ? "checked" : "") /> C++
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <input type="checkbox" name="SelectedSkills" value="Kotlin"
+                            @(Model.SelectedSkills.Contains("Kotlin") ? "checked" : "") /> Kotlin
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <input type="checkbox" name="SelectedSkills" value="Swift"
+                            @(Model.SelectedSkills.Contains("Swift") ? "checked" : "") /> Swift
+                    </label>
+                </div>
+            </div>
         </div>
-        <div class="col">
-            <label>
-                <input type="checkbox" name="SelectedSkills" value="Python"
-                    @(Model.SelectedSkills.Contains("Python") ? "checked" : "") /> Python
-            </label>
-        </div>
-        <div class="col">
-            <label>
-                <input type="checkbox" name="SelectedSkills" value="SQL"
-                    @(Model.SelectedSkills.Contains("SQL") ? "checked" : "") /> SQL
-            </label>
-        </div>
-        <div class="col">
-            <label>
-                <input type="checkbox" name="SelectedSkills" value="JavaScript"
-                    @(Model.SelectedSkills.Contains("JavaScript") ? "checked" : "") /> JavaScript
-            </label>
-        </div>
-        <div class="col">
-            <label>
-                <input type="checkbox" name="SelectedSkills" value="C++"
-                    @(Model.SelectedSkills.Contains("C++") ? "checked" : "") /> C++
-            </label>
-        </div>
-        <div class="col">
-            <label>
-                <input type="checkbox" name="SelectedSkills" value="Kotlin"
-                    @(Model.SelectedSkills.Contains("Kotlin") ? "checked" : "") /> Kotlin
-            </label>
-        </div>
-        <div class="col">
-            <label>
-                <input type="checkbox" name="SelectedSkills" value="Swift"
-                    @(Model.SelectedSkills.Contains("Swift") ? "checked" : "") /> Swift
-            </label>
-        </div>
-    </div>
-</div>
 
         <div class="btn">
             <button type="submit" class="btn2">@(string.IsNullOrEmpty(Model?.Email) ? "Create" : "Update")</button>

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<CVHub.Models.Account>
+@{
     ViewData["Title"] = "Main";
 }
 <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
@@ -8,12 +9,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CVHub - Find Developers</title>
 </head>
 <body>
     
     <div class="page">
-
         <div class="prt-1">
             <div class="main">
                 <p class="logo">
@@ -21,243 +21,118 @@
                 </p>
                 <img src="/images/comp.png" alt="comp">
             </div>
+            
+            @if (ViewBag.IsEnter)
+            {
+                <div class="user-actions">
+                    <a asp-controller="Account" asp-action="Index" class="btn-profile">My Profile</a>
+                    <a asp-controller="Authorisation" asp-action="Logout" class="btn-logout">Logout</a>
+                </div>
+            }
+            else
+            {
+                <div class="auth-actions">
+                    <a asp-controller="Registration" asp-action="Index" class="btn-register">Register</a>
+                    <a asp-controller="Authorisation" asp-action="Index" class="btn-login">Login</a>
+                </div>
+            }
+
             <div class="options">
-
-                <select class="dropdown">
-                    <option disabled selected>Expirience</option>
-                    <option value="1" class="choosing">0–2 years</option>
-                    <option value="2" class="choosing">3–5 years</option>
-                    <option value="3" class="choosing">5+ years</option>
+                <select class="dropdown" id="experienceFilter">
+                    <option value="" selected>All Experience</option>
+                    <option value="0-2">0–2 years</option>
+                    <option value="3-5">3–5 years</option>
+                    <option value="5+">5+ years</option>
                 </select>
 
-                <select class="dropdown">
-                    <option disabled selected class="choosing">Role</option>
-                    <option value="dev" class="choosing">Frontend Developer</option>
-                    <option value="pm" class="choosing">Backend Developer</option>
-                    <option value="kl" class="choosing">Fullstack Developer</option>
-                    <option value="sd" class="choosing">Mobile Developer (iOS / Android)</option>
-                    <option value="gf" class="choosing">Game Developer</option>
-                    <option value="wr" class="choosing">Automation QA</option>
+                <select class="dropdown" id="roleFilter">
+                    <option value="" selected>All Roles</option>
+                    <option value="Frontend">Frontend Developer</option>
+                    <option value="Backend">Backend Developer</option>
+                    <option value="Fullstack">Fullstack Developer</option>
+                    <option value="Mobile">Mobile Developer</option>
+                    <option value="Game">Game Developer</option>
+                    <option value="QA">Automation QA</option>
                 </select>
 
-                <select class="dropdown">
-                    <option disabled selected class="choosing">Seniority</option>
-                    <option value="jr" class="choosing">Junior</option>
-                    <option value="mid" class="choosing">Middle</option>
-                    <option value="sr" class="choosing">Senior</option>
+                <select class="dropdown" id="seniorityFilter">
+                    <option value="" selected>All Levels</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Middle">Middle</option>
+                    <option value="Senior">Senior</option>
                 </select>
+
             </div>
         </div>
+
         <div class="cards">
-            <div class="card">
-                <div class="avatar">
-                    <img src="/images/avatar.png" alt="avatar">
-                </div>
-                <div class="part">
-                    <div class="about">
-                        <div class="name">
-                            <p>Lena</p>
-                            <p>Fedchenko</p>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var account in Model)
+                {
+                    <div class="card" data-experience="@account.Experience" data-role="@account.Role" data-seniority="@account.Seniority" 
+                        onclick="window.location.href='@Url.Action("ViewResume", "Home", new { id = account.Id })'" 
+                        style="cursor: pointer;">
+                        <div class="avatar">
+                            <img src="@(string.IsNullOrEmpty(account.Photo) ? "/images/avatar.png" : account.Photo)" alt="avatar" style="width: 130px; height: 150px">
                         </div>
-                        <div class="tags">
-                            <div class="tag1">
-                                <p>
-                                    Senior
-                                </p>
+                        <div class="part">
+                            <div class="about">
+                                <div class="name">
+                                    <p>@account.Name</p>
+                                    <p>@account.Surname</p>
+                                </div>
+                                @* <div class="tags">
+                                    @if (!string.IsNullOrEmpty(account.Seniority))
+                                    {
+                                        <div class="tag1">
+                                            <p>@account.Seniority</p>
+                                        </div>
+                                    }
+                                    @if (!string.IsNullOrEmpty(account.Role))
+                                    {
+                                        <div class="tag2">
+                                            <p>@account.Role</p>
+                                        </div>
+                                    }
+                                    <div class="tag3">
+                                        <p>@account.Experience</p>
+                                    </div>
+                                </div> *@
                             </div>
-                            <div class="tag2">
-                                <p>
-                                    Senior
-                                </p>
-                            </div>
-                            <div class="tag3">
-                                <p>
-                                    2 year experience
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="work">
-                            iOS developer
-                        </p>
-                        <div class="languages">
-                            <div class="language">
-                                <p>
-                                    Js
-                                </p>
-                            </div>
-                            <div class="language">
-                                <p>
-                                    Python
-                                </p>
-                            </div>
-                            <div class="language">
-                                <p>
-                                    C#
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="avatar">
-                    <img src="/images/avatar.png" alt="avatar">
-                </div>
-                <div class="part">
-                    <div class="about">
-                        <div class="name">
-                            <p>Lena</p>
-                            <p>Fedchenko</p>
-                        </div>
-                        <div class="tags">
-                            <div class="tag1">
-                                <p>
-                                    Senior
-                                </p>
-                            </div>
-                            <div class="tag2">
-                                <p>
-                                    Senior
-                                </p>
-                            </div>
-                            <div class="tag3">
-                                <p>
-                                    2 year experience
-                                </p>
+                            <div>
+                                @if (!string.IsNullOrEmpty(account.Role))
+                                {
+                                    <p class="work">@account.Role</p>
+                                }
+                                <div class="languages">
+                                    @foreach (var skill in account.GetSkillsList())
+                                    {
+                                        <div class="language">
+                                            <p>@skill</p>
+                                        </div>
+                                    }
+                                    @if (account.GetSkillsList().Count > 5)
+                                    {
+                                        <div class="language">
+                                            <p>+@(account.GetSkillsList())</p>
+                                        </div>
+                                    }
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <p class="work">
-                            iOS developer
-                        </p>
-                        <div class="languages">
-                            <div class="language">
-                                <p>
-                                    Js
-                                </p>
-                            </div>
-                            <div class="language">
-                                <p>
-                                    Python
-                                </p>
-                            </div>
-                            <div class="language">
-                                <p>
-                                    C#
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                }
+            }
+            else
+            {
+                <div class="no-profiles">
+                    <h3>No profiles found</h3>
                 </div>
-            </div>
-            <div class="card">
-                <div class="avatar">
-                    <img src="/images/avatar.png" alt="avatar">
-                </div>
-                <div class="part">
-                    <div class="about">
-                        <div class="name">
-                            <p>Lena</p>
-                            <p>Fedchenko</p>
-                        </div>
-                        <div class="tags">
-                            <div class="tag1">
-                                <p>
-                                    Senior
-                                </p>
-                            </div>
-                            <div class="tag2">
-                                <p>
-                                    Senior
-                                </p>
-                            </div>
-                            <div class="tag3">
-                                <p>
-                                    2 year experience
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="work">
-                            iOS developer
-                        </p>
-                        <div class="languages">
-                            <div class="language">
-                                <p>
-                                    Js
-                                </p>
-                            </div>
-                            <div class="language">
-                                <p>
-                                    Python
-                                </p>
-                            </div>
-                            <div class="language">
-                                <p>
-                                    C#
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="avatar">
-                    <img src="/images/avatar.png" alt="avatar">
-                </div>
-                <div class="part">
-                    <div class="about">
-                        <div class="name">
-                            <p>Lena</p>
-                            <p>Fedchenko</p>
-                        </div>
-                        <div class="tags">
-                            <div class="tag1">
-                                <p>
-                                    Senior
-                                </p>
-                            </div>
-                            <div class="tag2">
-                                <p>
-                                    Senior
-                                </p>
-                            </div>
-                            <div class="tag3">
-                                <p>
-                                    2 year experience
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="work">
-                            iOS developer
-                        </p>
-                        <div class="languages">
-                            <div class="language">
-                                <p>
-                                    Js
-                                </p>
-                            </div>
-                            <div class="language">
-                                <p>
-                                    Python
-                                </p>
-                            </div>
-                            <div class="language">
-                                <p>
-                                    C#
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
+
+    
 </body>
 </html>

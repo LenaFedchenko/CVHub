@@ -1,6 +1,6 @@
 @model Authorisation
 @{
-    ViewData["Title"] = "authorisation";
+    ViewData["Title"] = "Authorization";
 }
 
 <link rel="stylesheet" href="~/css/authorisation.css" asp-append-version="true" />
@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Authorization - CV Hub</title>
 </head>
 <body>
     <div class="left">
@@ -26,21 +26,28 @@
             <h1>Hub</h1>
         </div>
         
-        
-            <form method="post" asp-controller="Authorisation" asp-action="CheckUser" class="forms2">
-                <div class="btn">
-                    <button class="main-btn"><a asp-controller="Registration" asp-action="Index">Registration</a></button>
-                    <button class="sec-btn"><a asp-controller="Authorisation" asp-action="Index">Authorisation</a></button>
-                </div>
+        <form method="post" asp-controller="Authorisation" asp-action="CheckUser" class="forms2">
+            @Html.AntiForgeryToken()
+            
+            <div class="btn">
+                <a asp-controller="Registration" asp-action="Index" class="main-btn">Registration</a>
+                <a asp-controller="Authorisation" asp-action="Index" class="sec-btn">Authorization</a>
+            </div>
 
-                <input asp-for="Email" class="inp" placeholder="Enter email"/>
-                <span asp-validation-for="Email"></span>
+            <div asp-validation-summary="All" class="text-danger"></div>
 
-                <input asp-for="Password" class="inp" placeholder="Enter password" type="password"/>
-                <span asp-validation-for="Password"></span>
+            <input asp-for="Email" class="inp" placeholder="Enter email"/>
+            <span asp-validation-for="Email" class="text-danger"></span>
 
-                <button><a asp-controller="Home" asp-action="Index"><input type="submit" class="btn2" value="Log in"/></a></button>
-            </form>
+            <input asp-for="Password" class="inp" placeholder="Enter password" type="password"/>
+            <span asp-validation-for="Password" class="text-danger"></span>
+
+            <button type="submit" class="btn2">Log in</button>
+            
+            <div class="links">
+                <a asp-controller="Home" asp-action="Index">Continue as guest</a>
+            </div>
+        </form>
     </div>
 </body>
 </html>

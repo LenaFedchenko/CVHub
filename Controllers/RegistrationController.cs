@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
+using CVHub.Data;
 using CVHub.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using CVHub.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace CVHub.Controllers
 {
@@ -14,6 +10,7 @@ namespace CVHub.Controllers
     public class RegistrationController : Controller
     {
         private readonly AppDbContext _context;
+
         public RegistrationController(AppDbContext context)
         {
             _context = context;
@@ -29,39 +26,57 @@ namespace CVHub.Controllers
         [HttpPost("Check")]
         public IActionResult Check(Registration data)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+                return View("Index");
+
+            var existingUser = _context.Users.FirstOrDefault(u => u.Email == data.Email);
+            if (existingUser != null)
             {
-                var newUser = new Registration
-                {
-                    Name = data.Name,
-                    Surname = data.Surname,
-                    Email = data.Email,
-                    Password = data.Password
-                };
-                _context.Users.Add(newUser);
-                _context.SaveChanges();
-
-                HttpContext.Session.SetString("IsEnter", "true");
-                HttpContext.Session.SetString("UserName", newUser.Name);
-                return RedirectToAction("Index", "Home");
-
+                ModelState.AddModelError("Email", "Email уже используется");
+                return View("Index");
             }
-            return View("Index");
+
+            _context.Users.Add(data);
+            _context.SaveChanges();
+
+
+            HttpContext.Session.SetInt32("UserId", data.Id);
+            HttpContext.Session.SetString("UserName", data.Name);
+            HttpContext.Session.SetString("IsEnter", "true");
+
+            return RedirectToAction("Index", "Account");
         }
 
         [HttpGet("Login")]
         public IActionResult Login()
         {
-            HttpContext.Session.SetString("IsEnter", "true");
-            return RedirectToAction("Index", "Home");
+            return View(); 
         }
 
+        [HttpPost("Login")]
+        public IActionResult Login(string email, string password)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+            if (user == null)
+            {
+                ModelState.AddModelError("", "Неверный email или пароль");
+                return View();
+            }
+
+
+            HttpContext.Session.SetInt32("UserId", user.Id);
+            HttpContext.Session.SetString("UserName", user.Name);
+            HttpContext.Session.SetString("IsEnter", "true");
+
+            return RedirectToAction("Index", "Account");
+        }
+
+        
         [HttpGet("Logout")]
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
         }
-
     }
 }
