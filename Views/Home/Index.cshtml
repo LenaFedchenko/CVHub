@@ -38,15 +38,16 @@
             }
 
             <div class="options">
-                <select class="dropdown" id="experienceFilter">
-                    <option value="" selected>All Experience</option>
-                    <option value="0-2">0–2 years</option>
-                    <option value="3-5">3–5 years</option>
-                    <option value="5+">5+ years</option>
+                <select class="dropdown" id="ageFilter">
+                    <option value="" disabled selected>Age</option>
+                    <option value="16-18">16-18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-50">30-50</option>
+                    <option value="50+">50+</option>
                 </select>
 
                 <select class="dropdown" id="roleFilter">
-                    <option value="" selected>All Roles</option>
+                    <option value="" disabled selected>All Roles</option>
                     <option value="Frontend">Frontend Developer</option>
                     <option value="Backend">Backend Developer</option>
                     <option value="Fullstack">Fullstack Developer</option>
@@ -56,7 +57,7 @@
                 </select>
 
                 <select class="dropdown" id="seniorityFilter">
-                    <option value="" selected>All Levels</option>
+                    <option value="" disabled selected>All Levels</option>
                     <option value="Junior">Junior</option>
                     <option value="Middle">Middle</option>
                     <option value="Senior">Senior</option>
@@ -82,28 +83,13 @@
                                     <p>@account.Name</p>
                                     <p>@account.Surname</p>
                                 </div>
-                                @* <div class="tags">
-                                    @if (!string.IsNullOrEmpty(account.Seniority))
-                                    {
-                                        <div class="tag1">
-                                            <p>@account.Seniority</p>
-                                        </div>
-                                    }
-                                    @if (!string.IsNullOrEmpty(account.Role))
-                                    {
-                                        <div class="tag2">
-                                            <p>@account.Role</p>
-                                        </div>
-                                    }
-                                    <div class="tag3">
-                                        <p>@account.Experience</p>
-                                    </div>
-                                </div> *@
+                                
                             </div>
                             <div>
                                 @if (!string.IsNullOrEmpty(account.Role))
                                 {
                                     <p class="work">@account.Role</p>
+                                    <p>@account.Age</p>
                                 }
                                 <div class="languages">
                                     @foreach (var skill in account.GetSkillsList())
@@ -115,7 +101,7 @@
                                     @if (account.GetSkillsList().Count > 5)
                                     {
                                         <div class="language">
-                                            <p>+@(account.GetSkillsList())</p>
+                                            <p>+@(account.GetSkillsList().Count - 5)</p>
                                         </div>
                                     }
                                 </div>
@@ -133,6 +119,6 @@
         </div>
     </div>
 
-    
+    <script src="~/js/home.js"></script>
 </body>
 </html>

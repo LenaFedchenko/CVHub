@@ -3,11 +3,35 @@
 *{
   font-family: "Inter", sans-serif;
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+  flex: 1;
+}
 a{
   cursor: pointer;
   text-decoration: transparent;
   color: #1B3A4B;
+}
+footer{
+  height: 68px;
+  background-color: #404040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+footer p{
+  color: #ffff;
+  font-size: 10px;
 }
 button:hover{
   cursor: pointer;

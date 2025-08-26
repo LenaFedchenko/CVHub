@@ -21,7 +21,7 @@ builder.Services.AddSession(options =>
 
 // 4️⃣ Авторизация (если нужна)
 builder.Services.AddAuthorization();
-
+builder.Services.AddSession();
 var app = builder.Build();
 
 app.UseStaticFiles();

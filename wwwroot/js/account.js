@@ -1,3 +1,4 @@
+
 document.querySelectorAll(".info textarea").forEach((el) => {
     el.addEventListener("input", () => {
         el.style.height = "auto";
@@ -8,3 +9,4 @@ document.querySelectorAll(".info textarea").forEach((el) => {
 document.getElementById("ph").addEventListener("change", function (event) {
     preview.src = URL.createObjectURL(event.target.files[0]);
 });
+

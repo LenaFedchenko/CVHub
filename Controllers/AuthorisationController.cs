@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using CVHub.Data;
 using Microsoft.AspNetCore.Http;
+using System.Diagnostics;
 
 namespace CVHub.Controllers
 {
@@ -24,6 +25,7 @@ namespace CVHub.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            _logger.LogInformation("Пользователь открыл страницу авторизации в {time}", DateTime.Now);
             if (HttpContext.Session.GetString("IsEnter") == "true")
             {
                 return RedirectToAction("Index", "Home");
@@ -79,6 +81,12 @@ namespace CVHub.Controllers
         {
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
+        }
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            _logger.LogError("Произошла ошибка!");
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

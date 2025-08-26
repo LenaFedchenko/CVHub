@@ -14,16 +14,17 @@ namespace CVHub.Controllers
     public class AccountController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ILogger<AccountController> _logger;
 
-        public AccountController(AppDbContext context)
+        public AccountController(ILogger<AccountController> logger, AppDbContext context)
         {
+            _logger = logger;
             _context = context;
         }
 
         [HttpGet]
         public IActionResult Login()
         {
-    
             return View();
         }
 
@@ -39,6 +40,7 @@ namespace CVHub.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Пользователь открыл страницу аккаунта в {time}", DateTime.Now);
             var userId = HttpContext.Session.GetInt32("UserId");
             if (userId == null)
                 return RedirectToAction("Login", "Account");
@@ -145,6 +147,7 @@ namespace CVHub.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
+            _logger.LogError("Произошла ошибка!");
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }

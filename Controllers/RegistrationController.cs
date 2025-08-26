@@ -3,22 +3,26 @@ using CVHub.Data;
 using CVHub.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using System.Diagnostics;
 
 namespace CVHub.Controllers
 {
     [Route("[controller]")]
     public class RegistrationController : Controller
     {
+        private readonly ILogger<RegistrationController> _logger;
         private readonly AppDbContext _context;
 
-        public RegistrationController(AppDbContext context)
+        public RegistrationController(AppDbContext context, ILogger<RegistrationController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         [HttpGet("")]
         public IActionResult Index()
         {
+            _logger.LogInformation("Пользователь открыл страницу регистрации в {time}", DateTime.Now);
             ViewBag.IsEnter = HttpContext.Session.GetString("IsEnter") == "true";
             return View();
         }
@@ -47,10 +51,11 @@ namespace CVHub.Controllers
             return RedirectToAction("Index", "Account");
         }
 
-        [HttpGet("Login")]
+        [HttpGet("Authorisation")]
         public IActionResult Login()
         {
-            return View(); 
+            return RedirectToAction("Index", "Authorisation");
+            // return View();
         }
 
         [HttpPost("Login")]
@@ -71,12 +76,19 @@ namespace CVHub.Controllers
             return RedirectToAction("Index", "Account");
         }
 
-        
+
         [HttpGet("Logout")]
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
+        }
+        
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            _logger.LogError("Произошла ошибка!");
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

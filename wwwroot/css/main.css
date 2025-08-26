@@ -4,6 +4,16 @@
 *{
     font-family: "Inter", sans-serif;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
 .page{
     display: flex;
     align-items: center;
@@ -67,37 +77,46 @@
     border-radius: 10px;   
 }
 
-.cards{
-    width: 100%;
+.cards {
+    display: flex;
     flex-wrap: wrap;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 49px;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    padding-bottom: 50px;
 }
-.card{
+
+.card {
+    display: flex;
     width: 562px;
-    height: 186px;
-    border-radius: 10px;
+    height: 250px;
     background-color: #88ACFA;
-    display: flex;
-    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-.avatar{
-    width: 130px;
-    height: 100%;
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.avatar {
+    width: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
 }
-.about{
-    width: 178px;
-    height: 100%;
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
+
+.avatar img {
+    width: 130px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
 }
+
+
 
 .tag1{
     border-radius: 15px;
@@ -149,33 +168,49 @@
 .name p{
     margin: 0px;
 }
-.language{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    height: 25px;
-    border: 2px #abd62b solid;
-    border-radius: 10px;
-    padding: 5px;
+.work {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
 }
-.languages{
-    width: 200px;
-    height: 100%;
+
+.languages {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
 }
-.part{
+
+.language {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 40px;
+    height: 25px;
+    padding: 0 10px;
+    border: 2px solid #abd62b;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.1);
+    transition: 0.2s;
 }
-.work{
+
+.language:hover {
+    background-color: #abd62b;
+    color: #000;
+}
+.part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.about .name {
     font-size: 24px;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

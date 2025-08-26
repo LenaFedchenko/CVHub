@@ -1,6 +1,9 @@
 @model CVHub.Models.Account
 @{
     ViewData["Title"] = "Account";
+    var currentUserId = Context.Session.GetInt32("UserId");
+    // Проверяем, является ли текущий пользователь владельцем аккаунта
+    var isOwner = Model?.RegistrationId == currentUserId;
 }
 <link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
 
@@ -12,121 +15,175 @@
     <title>Account</title>
 </head>
 <body>
-    <form asp-controller="Account" asp-action="@(string.IsNullOrEmpty(Model?.Email) ? "Create" : "Update")" method="post" enctype="multipart/form-data">
-        <div asp-validation-summary="All" class="text-danger"></div>
+    @if (isOwner)
+    {
+        
+        <form asp-controller="Account" asp-action="@(string.IsNullOrEmpty(Model?.Email) ? "Create" : "Update")" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="All" class="text-danger"></div>
 
+            <div class="prt1">
+                <div class="photo">
+                    <img id="preview" src="@(string.IsNullOrEmpty(Model?.Photo) ? Url.Content("~/images/ava.png") : Model.Photo)" alt="avatar" class="ava">
+                    <input asp-for="PhotoFile" type="file" id="ph" accept="image/*" />
+                    <span asp-validation-for="PhotoFile"></span>
+                </div>
+
+                <div class="prt2">
+                    <input asp-for="Name" placeholder="Enter name" />
+                    <span asp-validation-for="Name"></span>
+
+                    <input asp-for="Surname" placeholder="Enter surname"/>
+                    <span asp-validation-for="Surname"></span>
+
+                    <input asp-for="Email" placeholder="Enter email"/>
+                    <span asp-validation-for="Email"></span>
+
+                    <input asp-for="Linkedin" placeholder="Link to Linkedin"/>
+                    <span asp-validation-for="Linkedin"></span>
+
+                    <input asp-for="Github" placeholder="Link to GitHub"/>
+                    <span asp-validation-for="Github"></span>
+                </div>
+            </div>
+
+            <div class="drops">
+                <select asp-for="Age" class="form-control">
+                    <option value="" disabled selected>Age</option>
+                    <option value="16-18">16-18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-50">30-50</option>
+                    <option value="50+">50+</option>
+                </select>
+
+                <select asp-for="Role" class="form-control">
+                    <option value="" selected>All Roles</option>
+                        <option value="Frontend">Frontend Developer</option>
+                        <option value="Backend">Backend Developer</option>
+                        <option value="Fullstack">Fullstack Developer</option>
+                        <option value="Mobile">Mobile Developer</option>
+                        <option value="Game">Game Developer</option>
+                        <option value="QA">Automation QA</option>
+                </select>
+
+                <select asp-for="Seniority" class="form-control">
+                    <option value="" selected>All Levels</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Middle">Middle</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+
+            <div class="info">
+                <textarea asp-for="PlaceEarly" placeholder="Previous place of work"></textarea>
+                <span asp-validation-for="PlaceEarly"></span>
+
+                <textarea asp-for="Experience" placeholder="Tell us about your work experience"></textarea>
+                <span asp-validation-for="Experience"></span>
+            </div>
+
+            <div class="last">
+                <p>Languages of programming which you know</p>
+                <div class="lan">
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" name="SelectedSkills" value="C#"
+                                @(Model.SelectedSkills.Contains("C#") ? "checked" : "") /> C#
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" name="SelectedSkills" value="Python"
+                                @(Model.SelectedSkills.Contains("Python") ? "checked" : "") /> Python
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" name="SelectedSkills" value="SQL"
+                                @(Model.SelectedSkills.Contains("SQL") ? "checked" : "") /> SQL
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" name="SelectedSkills" value="JavaScript"
+                                @(Model.SelectedSkills.Contains("JavaScript") ? "checked" : "") /> JavaScript
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" name="SelectedSkills" value="C++"
+                                @(Model.SelectedSkills.Contains("C++") ? "checked" : "") /> C++
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" name="SelectedSkills" value="Kotlin"
+                                @(Model.SelectedSkills.Contains("Kotlin") ? "checked" : "") /> Kotlin
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" name="SelectedSkills" value="Swift"
+                                @(Model.SelectedSkills.Contains("Swift") ? "checked" : "") /> Swift
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <button type="submit" class="btn2">@(string.IsNullOrEmpty(Model?.Email) ? "Create" : "Update")</button>
+            </div>
+        </form>
+    }else{
         <div class="prt1">
             <div class="photo">
                 <img id="preview" src="@(string.IsNullOrEmpty(Model?.Photo) ? Url.Content("~/images/ava.png") : Model.Photo)" alt="avatar" class="ava">
-                <input asp-for="PhotoFile" type="file" id="ph" accept="image/*" />
-                <span asp-validation-for="PhotoFile"></span>
             </div>
 
             <div class="prt2">
-                <input asp-for="Name" placeholder="Enter name"/>
-                <span asp-validation-for="Name"></span>
-
-                <input asp-for="Surname" placeholder="Enter surname"/>
-                <span asp-validation-for="Surname"></span>
-
-                <input asp-for="Email" placeholder="Enter email"/>
-                <span asp-validation-for="Email"></span>
-
-                <input asp-for="Linkedin" placeholder="Link to Linkedin"/>
-                <span asp-validation-for="Linkedin"></span>
-
-                <input asp-for="Github" placeholder="Link to GitHub"/>
-                <span asp-validation-for="Github"></span>
+                <input value="@Model.Name" placeholder="Enter name" readonly />
+                <input value="@Model.Surname" placeholder="Enter surname" readonly />
+                <input value="@Model.Email" placeholder="Enter email" readonly />
+                <input value="@Model.Linkedin" placeholder="Link to Linkedin" readonly />
+                <input value="@Model.Github" placeholder="Link to GitHub" readonly />
             </div>
         </div>
 
         <div class="drops">
-            <select asp-for="Age" class="form-control">
-                <option value="" disabled selected>Age</option>
-                <option value="16-18">16-18</option>
-                <option value="18-30">18-30</option>
-                <option value="30-50">30-50</option>
-                <option value="50+">50+</option>
+            <select class="form-control" disabled>
+                <option>@Model.Age</option>
             </select>
 
-            <select asp-for="Role" class="form-control">
-                <option value="" disabled selected>Role</option>
-                <option value="dev">Frontend Developer</option>
-                <option value="pm">Backend Developer</option>
-                <option value="kl">Fullstack Developer</option>
-                <option value="sd">Mobile Developer</option>
-                <option value="gf">Game Developer</option>
-                <option value="wr">Automation QA</option>
+            <select class="form-control" disabled>
+                <option>@Model.Role</option>
             </select>
 
-            <select asp-for="Seniority" class="form-control">
-                <option value="" disabled selected>Seniority</option>
-                <option value="jr">Junior</option>
-                <option value="mid">Middle</option>
-                <option value="sr">Senior</option>
+            <select class="form-control" disabled>
+                <option>@Model.Seniority</option>
             </select>
         </div>
 
         <div class="info">
-            <textarea asp-for="PlaceEarly" placeholder="Previous place of work"></textarea>
-            <span asp-validation-for="PlaceEarly"></span>
-
-            <textarea asp-for="Experience" placeholder="Tell us about your work experience"></textarea>
-            <span asp-validation-for="Experience"></span>
+            <textarea readonly>@Model.PlaceEarly</textarea>
+            <textarea readonly>@Model.Experience</textarea>
         </div>
 
         <div class="last">
             <p>Languages of programming which you know</p>
             <div class="lan">
-                <div class="col">
-                    <label>
-                        <input type="checkbox" name="SelectedSkills" value="C#"
-                            @(Model.SelectedSkills.Contains("C#") ? "checked" : "") /> C#
-                    </label>
-                </div>
-                <div class="col">
-                    <label>
-                        <input type="checkbox" name="SelectedSkills" value="Python"
-                            @(Model.SelectedSkills.Contains("Python") ? "checked" : "") /> Python
-                    </label>
-                </div>
-                <div class="col">
-                    <label>
-                        <input type="checkbox" name="SelectedSkills" value="SQL"
-                            @(Model.SelectedSkills.Contains("SQL") ? "checked" : "") /> SQL
-                    </label>
-                </div>
-                <div class="col">
-                    <label>
-                        <input type="checkbox" name="SelectedSkills" value="JavaScript"
-                            @(Model.SelectedSkills.Contains("JavaScript") ? "checked" : "") /> JavaScript
-                    </label>
-                </div>
-                <div class="col">
-                    <label>
-                        <input type="checkbox" name="SelectedSkills" value="C++"
-                            @(Model.SelectedSkills.Contains("C++") ? "checked" : "") /> C++
-                    </label>
-                </div>
-                <div class="col">
-                    <label>
-                        <input type="checkbox" name="SelectedSkills" value="Kotlin"
-                            @(Model.SelectedSkills.Contains("Kotlin") ? "checked" : "") /> Kotlin
-                    </label>
-                </div>
-                <div class="col">
-                    <label>
-                        <input type="checkbox" name="SelectedSkills" value="Swift"
-                            @(Model.SelectedSkills.Contains("Swift") ? "checked" : "") /> Swift
-                    </label>
-                </div>
+                @foreach(var skill in new[] {"C#", "Python", "SQL", "JavaScript", "C++", "Kotlin", "Swift"})
+                {
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" value="@skill" @(Model.SelectedSkills.Contains(skill) ? "checked" : "") disabled /> @skill
+                        </label>
+                    </div>
+                }
             </div>
         </div>
-
         <div class="btn">
-            <button type="submit" class="btn2">@(string.IsNullOrEmpty(Model?.Email) ? "Create" : "Update")</button>
+            <button class="pdf" onclick="window.print()">Print</button>
         </div>
-    </form>
+    }
 
 
     <script src="~/js/account.js"></script>

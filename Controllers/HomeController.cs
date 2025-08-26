@@ -19,6 +19,7 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
+        _logger.LogInformation("Пользователь открыл главную страницу в {time}", DateTime.Now);
         ViewBag.IsEnter = HttpContext.Session.GetString("IsEnter") == "true";
         
         var accounts = await _context.Accounts
@@ -54,6 +55,7 @@ public class HomeController : Controller
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
+        _logger.LogError("Произошла ошибка!");
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
