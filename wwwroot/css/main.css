@@ -28,10 +28,11 @@ html, body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .btn{
-    width: 50px;
-    height: 20px;
+    width: 100px;
+    height: 40px;
     border-radius: 10px;
     background-color: #345ab3;
+    color: #ffff;
 }
 .page {
     display: flex;

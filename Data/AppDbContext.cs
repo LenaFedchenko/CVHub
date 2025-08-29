@@ -10,7 +10,6 @@ namespace CVHub.Data
             : base(options)
         {
         }
-        public DbSet<Registration> Registrations { get; set; }
         public DbSet<Registration> Users { get; set; } = null!;
         public DbSet<Account> Accounts { get; set; } = null!;
 
