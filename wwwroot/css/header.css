@@ -1,27 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-*{
+* {
   font-family: "Inter", sans-serif;
-}
-html, body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   height: 100%;
 }
+
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main{
-  flex: 1;
-}
-a{
-  cursor: pointer;
-  text-decoration: transparent;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #fdfdfd;
   color: #1B3A4B;
 }
-footer{
+
+main {
+  flex: 1;
+  margin-top: 100px; /* чтобы контент не прятался за шапкой */
+}
+
+/* Ссылки */
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #1B3A4B;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0e2d3a;
+}
+
+/* Футер */
+footer {
   height: 68px;
   background-color: #404040;
   display: flex;
@@ -29,65 +44,90 @@ footer{
   justify-content: center;
   margin-top: 10px;
 }
-footer p{
-  color: #ffff;
-  font-size: 10px;
+footer p {
+  color: #fff;
+  font-size: 13px;
 }
-button:hover{
+
+/* Кнопки */
+button {
+  border: none;
+  transition: all 0.3s ease;
+}
+button:hover {
   cursor: pointer;
   background-color: #1B3A4B;
   color: #C1EBFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
-.head{
+
+/* Шапка */
+.head {
   background-color: #C1EBFF;
   width: 100%;
   height: 80px;
-  position: absolute;
+  position: fixed; /* чтобы всегда оставалась сверху */
   left: 0;
   top: 0;
   right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.display-4{
-  margin-top: 100px;
+.display-4 {
+  margin-top: 120px;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
 }
 
-.navig{
+/* Навигация */
+.navig {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #1B3A4B;
-  font-size: 24px;
+  gap: 20px;
+  font-size: 20px;
 }
-.navig a{
+.navig a {
   text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.navig a:hover {
+  background: #1B3A4B;
+  color: #C1EBFF;
 }
 
-.gap-head{
+/* Контейнер для кнопок */
+.gap-head {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 65%;
+  justify-content: space-between; /* вместо 65% gap */
+  padding: 0 40px;
 }
 
-.buttons button{
-  height: 39px;
-  background-color: transparent;
-  font-size: 24px;
-  color: #1B3A4B;
-  border-radius: 10px;
-}
-.buttons{
+.buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 21px;
+  gap: 20px;
+}
+.buttons button {
+  height: 39px;
+  background-color: transparent;
+  font-size: 18px;
+  color: #1B3A4B;
+  border-radius: 10px;
+  padding: 0 16px;
+  border: 2px solid #1B3A4B;
+}
+.buttons button:hover {
+  background-color: #1B3A4B;
+  color: #C1EBFF;
 }

@@ -2,8 +2,10 @@
 @{
     ViewData["Title"] = "Account";
     var currentUserId = Context.Session.GetInt32("UserId");
+    Console.WriteLine(currentUserId);
+    Console.WriteLine(Model?.RegistrationId);
     // Проверяем, является ли текущий пользователь владельцем аккаунта
-    var isOwner = Model?.RegistrationId == currentUserId;
+    var isOwner = Model?.RegistrationId == currentUserId || Model?.RegistrationId == 0;
 }
 <link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
 

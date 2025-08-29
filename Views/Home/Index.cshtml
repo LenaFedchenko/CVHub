@@ -22,21 +22,6 @@
                 <img src="/images/comp.png" alt="comp">
             </div>
             
-            @if (ViewBag.IsEnter)
-            {
-                <div class="user-actions">
-                    <a asp-controller="Account" asp-action="Index" class="btn-profile">My Profile</a>
-                    <a asp-controller="Authorisation" asp-action="Logout" class="btn-logout">Logout</a>
-                </div>
-            }
-            else
-            {
-                <div class="auth-actions">
-                    <a asp-controller="Registration" asp-action="Index" class="btn-register">Register</a>
-                    <a asp-controller="Authorisation" asp-action="Index" class="btn-login">Login</a>
-                </div>
-            }
-
             <div class="options">
                 <select class="dropdown" id="ageFilter">
                     <option value="" disabled selected>Age</option>
@@ -48,12 +33,12 @@
 
                 <select class="dropdown" id="roleFilter">
                     <option value="" disabled selected>All Roles</option>
-                    <option value="Frontend">Frontend Developer</option>
-                    <option value="Backend">Backend Developer</option>
-                    <option value="Fullstack">Fullstack Developer</option>
-                    <option value="Mobile">Mobile Developer</option>
-                    <option value="Game">Game Developer</option>
-                    <option value="QA">Automation QA</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Fullstack Developer">Fullstack Developer</option>
+                    <option value="Mobile Developer">Mobile Developer</option>
+                    <option value="Game Developer">Game Developer</option>
+                    <option value="Automation QA">Automation QA</option>
                 </select>
 
                 <select class="dropdown" id="seniorityFilter">
@@ -63,6 +48,8 @@
                     <option value="Senior">Senior</option>
                 </select>
 
+                
+                <button id="resetFilters" class="btn">Reset filters</button>
             </div>
         </div>
 
@@ -71,11 +58,16 @@
             {
                 foreach (var account in Model)
                 {
-                    <div class="card" data-experience="@account.Experience" data-role="@account.Role" data-seniority="@account.Seniority" 
-                        onclick="window.location.href='@Url.Action("ViewResume", "Home", new { id = account.Id })'" 
-                        style="cursor: pointer;">
+                    <div class="card" 
+                         data-age="@account.Age"
+                         data-role="@account.Role" 
+                         data-seniority="@account.Seniority"
+                         onclick="window.location.href='@Url.Action("ViewResume", "Home", new { id = account.Id })'" 
+                         style="cursor: pointer;">
+                         
                         <div class="avatar">
-                            <img src="@(string.IsNullOrEmpty(account.Photo) ? "/images/avatar.png" : account.Photo)" alt="avatar" style="width: 130px; height: 150px">
+                            <img src="@(string.IsNullOrEmpty(account.Photo) ? "/images/avatar.png" : account.Photo)" 
+                                 alt="avatar" style="width: 130px; height: 150px">
                         </div>
                         <div class="part">
                             <div class="about">
@@ -83,7 +75,6 @@
                                     <p>@account.Name</p>
                                     <p>@account.Surname</p>
                                 </div>
-                                
                             </div>
                             <div>
                                 @if (!string.IsNullOrEmpty(account.Role))
@@ -119,6 +110,74 @@
         </div>
     </div>
 
-    <script src="~/js/home.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("bebeb");
+    const ageFilter = document.getElementById("ageFilter");
+    const roleFilter = document.getElementById("roleFilter");
+    const seniorityFilter = document.getElementById("seniorityFilter");
+    const resetBtn = document.getElementById("resetFilters");
+    const cards = document.querySelectorAll(".card");
+
+    function applyFilters() {
+        const ageValue = ageFilter.value;
+        const roleValue = roleFilter.value;
+        const seniorityValue = seniorityFilter.value;
+
+        cards.forEach(card => {
+            let show = true;
+
+            const age = parseInt(card.dataset.age || "0");
+            const role = card.dataset.role || "";
+            const seniority = card.dataset.seniority || "";
+
+            // фильтр по возрасту
+            if (ageValue) {
+                switch (ageValue) {
+                    case "16-18":
+                        if (age < 16 || age > 18) show = false;
+                        break;
+                    case "18-30":
+                        if (age < 18 || age > 30) show = false;
+                        break;
+                    case "30-50":
+                        if (age < 30 || age > 50) show = false;
+                        break;
+                    case "50+":
+                        if (age < 50) show = false;
+                        break;
+                }
+            }
+
+            // фильтр по роли
+            if (roleValue && role !== roleValue) {
+                show = false;
+            }
+
+            // фильтр по уровню
+            if (seniorityValue && seniority !== seniorityValue) {
+                show = false;
+            }
+
+            card.style.display = show ? "flex" : "none";
+        });
+    }
+
+    // обработчики
+    ageFilter.addEventListener("change", applyFilters);
+    roleFilter.addEventListener("change", applyFilters);
+    seniorityFilter.addEventListener("change", applyFilters);
+
+    // сброс фильтров
+    resetBtn.addEventListener("click", function () {
+        ageFilter.selectedIndex = 0;
+        roleFilter.selectedIndex = 0;
+        seniorityFilter.selectedIndex = 0;
+
+        // показать все карточки
+        cards.forEach(card => card.style.display = "flex");
+    });
+});
+</script>
 </body>
 </html>

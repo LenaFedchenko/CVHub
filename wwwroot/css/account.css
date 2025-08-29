@@ -7,7 +7,6 @@
     font-family: "Inter", sans-serif;
 }
 
-/* Основная обертка */
 .prt1 {
     display: flex;
     align-items: flex-start;
@@ -15,10 +14,9 @@
     width: 100%;
     min-height: 562px;
     gap: 50px;
-    margin: 50px 0; /* добавлен общий отступ сверху и снизу */
+    margin: 50px 0;
 }
 
-/* Фото */
 .photo {
     width: 473px;
     height: 465px;
@@ -27,7 +25,11 @@
     overflow: hidden;
     flex-shrink: 0;
     margin-right: 50px; 
-    margin-top: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.photo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .ava {
@@ -52,17 +54,15 @@
     padding-left: 40px;
     font-size: 24px;
     color: #333;
-    margin-bottom: 20px; /* добавлен отступ между полями */
-    transition: 0.2s;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
 }
-
 .prt2 input:focus {
     border-color: #3b82f6;
-    box-shadow: 0 0 6px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
     outline: none;
 }
 
-/* Select блоки */
 .drops {
     width: 95%;
     display: flex;
@@ -80,17 +80,15 @@
     font-size: 16px;
     background-color: #fff;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.3s ease;
 }
-
 .drops select:hover,
 .drops select:focus {
     border-color: #3b82f6;
-    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 6px rgba(59, 130, 246, 0.3);
     outline: none;
 }
 
-/* Текстовые поля */
 .info {
     display: flex;
     flex-direction: column;
@@ -109,17 +107,15 @@
     resize: none;
     font-size: 16px;
     line-height: 1.4;
-    transition: 0.2s;
+    transition: 0.3s ease;
 }
-
 .info textarea:focus {
     border-color: #3b82f6;
-    box-shadow: 0 0 6px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
     background-color: #fff;
     outline: none;
 }
 
-/* Языки */
 .last {
     display: flex;
     flex-direction: column;
@@ -155,21 +151,20 @@
     border-radius: 10px;
     border: 2px solid #F8F415;
     background-color: rgba(248, 244, 21, 0.1);
-    transition: 0.2s;
+    transition: 0.3s ease;
     cursor: pointer;
+    font-weight: 600;
 }
-
 .col:hover {
     background-color: #F8F415;
     color: #000;
+    transform: translateY(-2px);
 }
 
-/* Кнопки */
 .btn {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .btn button {
@@ -181,16 +176,14 @@
     font-weight: 600;
     color: #064E68;
     background-color: #EAC1FF;
-    transition: 0.2s;
+    transition: 0.3s ease;
     cursor: pointer;
 }
-
 .btn button:hover {
     background-color: #e4b4fc;
     transform: translateY(-2px);
 }
 
-/* PDF кнопка */
 .pdf {
     width: 268px;
     height: 45px;
@@ -201,10 +194,9 @@
     font-size: 32px;
     font-weight: 400;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.3s ease;
     margin-top: 20px;
 }
-
 .pdf:hover {
     background-color: #e4b4fc;
     transform: translateY(-2px);
