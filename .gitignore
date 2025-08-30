@@ -8,6 +8,7 @@
 bin/
 obj/
 out/
+readmePhotos/
 
 *.nupkg
 *.snupkg
