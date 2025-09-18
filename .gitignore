@@ -1,28 +1,27 @@
-
-.vs/
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-
+# Build results
 bin/
 obj/
-out/
 
-
-*.nupkg
-*.snupkg
-packages/
-*.nuget.cache
-
+# Visual Studio / Rider
+.vs/
 .idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
 
-.env
+# VS Code
+.vscode/
 
+# Logs
 *.log
 
-.DS_Store
-Thumbs.db
+# Env & secrets
+.env
+appsettings.Development.json
 
-*.cache
-*.vsix
+# Node / front-end (если подключаешь либы через npm)
+wwwroot/lib/
+wwwroot/dist/
+node_modules/
