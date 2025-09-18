@@ -5085,11 +5085,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CVHub\\CVHub\\CVHub.csproj",
+      "projectUniqueName": "D:\\Диск D\\CVHub\\CVHub\\CVHub.csproj",
       "projectName": "CVHub",
-      "projectPath": "D:\\CVHub\\CVHub\\CVHub.csproj",
+      "projectPath": "D:\\Диск D\\CVHub\\CVHub\\CVHub.csproj",
       "packagesPath": "C:\\Users\\Lena\\.nuget\\packages\\",
-      "outputPath": "D:\\CVHub\\CVHub\\obj\\",
+      "outputPath": "D:\\Диск D\\CVHub\\CVHub\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lena\\AppData\\Roaming\\NuGet\\NuGet.Config",
